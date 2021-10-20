@@ -2239,8 +2239,23 @@ body{
 }
 
 @media only screen and (max-width: 1024px){
+  .mollecttor{
+    overflow: hidden;
+  }
+  #paralax1, #paralax2, #paralax3, #paralax4{
+    display: none;
+  }
   .mc-nft .wrap{
     width: 55%;
+  }
+  .mct-discord-mobile{
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: -34px;
+  }
+  .mc-title{
+    overflow: hidden;
   }
   .mcr-content-wrap{
     display: none;
@@ -2401,6 +2416,15 @@ body{
   .mcs-content{
     padding: 0 32px;
   }
+  .mc-slider .paroller-left{
+    display: none;
+  }
+  .mc-slider .paroller-right{
+    display: none;
+  }
+  /* .mc-slider .swiper{
+    overflow: hidden !important;
+  } */
   .m-footer{
     background: #2e1101;
     position: relative;
@@ -2412,7 +2436,7 @@ body{
     /* background: url(../images/rectangle-1.svg) center no-repeat;
     background-size: contain; */
     position: absolute;
-    top: -230px;
+    top: -100px;
     margin: 0 32px;
     justify-content: space-between;
   }
@@ -2523,9 +2547,6 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
-  #paralax1, #paralax2, #paralax3, #paralax4{
-    display: none;
-  }
   .mc-title .mct-content-wrap .mct-ancient{
     font-size: 50px;
     font-weight: normal;
@@ -2546,12 +2567,7 @@ body{
     background: url(../images/ipad-bg-1.png);
     min-height: 1024px;
     position: relative;
-  }
-  .mct-discord-mobile{
-    display: block;
-    position: absolute;
-    bottom: -34px;
-    right: -34px;
+    overflow: hidden;
   }
   .mc-title .mct-content-wrap{
     padding: 0 32px;
@@ -2579,6 +2595,7 @@ body{
   .mc-magical{
     min-height: 615px;
     background: url(../images/planet.png) center no-repeat;
+    overflow: hidden;
   }
   .sp-container h2.frame-1{
     top: -50px;
@@ -2660,9 +2677,6 @@ body{
     min-height: 500px;
   }
   .mc-slider .paroller-left{
-    display: none;
-  }
-  .mc-slider .paroller-right{
     display: none;
   }
   .mc-slider .swiper .swiper-wrapper .swiper-slide{
@@ -2797,6 +2811,7 @@ body{
     font-style: normal;
     line-height: normal;
     letter-spacing: -1px;
+    padding: 0 12px;
   }
   .mc-mysterychest .mcm-des{
     font-size: 17px;
