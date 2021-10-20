@@ -342,6 +342,9 @@ body{
   bottom: -250px;
   left: 100px;
 }
+.mc-title .mct-content-wrap .mct-icon-mobile{
+  display: none;
+}
 
 .mc-title .mct-content-wrap .mct-icon .icon-wrapper { 
   display: inline-block;
@@ -431,6 +434,9 @@ body{
   letter-spacing: -0.28px;
   color: #fff;
 }
+.mc-title .mct-content-wrap .mct-scroll-down-mobile{
+  display: none;
+}
 
 /* magical world */
 .mc-magical{
@@ -449,6 +455,7 @@ body{
   align-items: center;
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 #trigger1{
   min-height: 1px;
@@ -676,8 +683,10 @@ body{
     -ms-animation-delay: 0s;
     animation-delay: 0s;
     position: absolute;
-    top: -30px;
+    top: -18px;
+    left: 0;
     width: 100%;
+    padding: 0 12px;
   }
   .sp-container h2.frame-2 {
     -webkit-animation-delay: 3s;
@@ -685,8 +694,10 @@ body{
     -ms-animation-delay: 3s;
     animation-delay: 3s;
     position: absolute;
-    top: -180px;
+    top: -88px;
+    left: 0;
     width: 100%;
+    padding: 0 12px;
   }
   .sp-container h2.frame-3 {
     -webkit-animation-delay: 6s;
@@ -694,8 +705,10 @@ body{
     -ms-animation-delay: 6s;
     animation-delay: 6s;
     position: absolute;
-    top: -50px;
+    top: -18px;
+    left: 0;
     width: 100%;
+    padding: 0 12px;
   }
   .sp-container h2.frame-4 {
     font-size: 200px;
@@ -1099,6 +1112,7 @@ body{
   opacity: 1 !important;
   position: relative;
   margin: 0 !important;
+  outline: none;
 }
 .swiper-pagination-bullet:not(:nth-child(1)){
   margin-left: 220px !important;
@@ -2314,12 +2328,30 @@ body{
   .mc-title .mct-content-wrap .mct-icon{
     display: none;
   }
+  .mc-title .mct-content-wrap .mct-icon-mobile{
+    display: inline-block;
+  }
   .mc-title .mct-content-wrap .mct-scroll-down{
     display: none;
+  }
+  .mc-title .mct-content-wrap .mct-scroll-down-mobile{
+    display: inline-block;
   }
   .mc-magical{
     min-height: 615px;
     background: url(../images/planet.png) center no-repeat;
+  }
+  .sp-container h2.frame-1{
+    top: -50px;
+    left: 0;
+  }
+  .sp-container h2.frame-2{
+    top: -168px;
+    left: 0;
+  }
+  .sp-container h2.frame-3{
+    top: -88px;
+    left: 0;
   }
   .text-magical{
     font-size: 30px;
@@ -2328,6 +2360,7 @@ body{
     font-style: normal;
     line-height: 1.33;
     letter-spacing: -0.65px;
+    padding: 0 12px;
   }
   .mc-magical .mcm-content-wrap .mcm-title{
     font-size: 30px;
@@ -2694,6 +2727,7 @@ body{
   .mcr-content-wrap-mobile .swiper-container .swiper-button-next{
     top: 90%;
     right: 43%;
+    outline: none;
   }
   .mcr-content-wrap-mobile .swiper-container .swiper-button-next::before{
     content: '';
