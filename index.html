@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Mollector</title>
+  <link rel="preload" as="image" href="">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Link Swiper's CSS -->
@@ -39,7 +40,7 @@
     <div id="paralax4">
       <img src="images/group-left.png" alt="">
     </div>
-    <div class="mollecttor">
+    <div class="mollecttor" id="mollecttor">
       <header class="m-header w-1440">
         <div class="mh-">
           <div class="mh-wrap">
@@ -693,6 +694,16 @@
     $('.my-element').paroller();
     $('.mct-title').paroller();
     $('.fire-atend').paroller();
+
+    function onceLoaded(){
+        // this callback function could be a script from any other file etc
+        //console.log("onceLoaded fired");
+        var mainContent = document.getElementById("mollecttor");
+        mainContent.style.opacity = 1;
+        mainContent.style.visibility = "visible";
+    }
+    
+    imageBgPreload(onceLoaded);
 
 
   </script>
