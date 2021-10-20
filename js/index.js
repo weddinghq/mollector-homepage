@@ -167,3 +167,18 @@ function imageBgPreload(onComplete) {
     }
   }
 }
+
+
+
+// $(document).ready(function() {
+// 	var s = $(".text-start");
+//   var z = $(".text-magical-bottom")
+// 	var pos = s.position();					   
+// 	$(window).scroll(function() {
+// 		var windowpos = $(window).scrollTop();
+// 		if (windowpos >= (pos.top + 200) & windowpos <=1000) {
+// 			s.addClass("sp-container");
+// 			z.addClass("sp-circle-link");
+// 		}
+// 	});
+// });
