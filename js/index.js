@@ -21,8 +21,8 @@ var swiper1 = new Swiper(".swiper1", {
   },
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 480px
-    480: {
+    // when window width is >= 320px
+    320: {
       slidesPerView: 1,
       spaceBetween: 30
     },
@@ -38,7 +38,7 @@ var swiper1 = new Swiper(".swiper1", {
     },
     // when window width is >= 1024px
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40
     },
     // when window width is >= 1920px
@@ -53,50 +53,46 @@ $("#swiper-pagination .swiper-pagination-bullet").addClass(function (index) {
   return "swiper-pagination-bullet-" + index;
 });
 
+var slider2 = new Swiper ('.slider2', {  
+  slidesPerView: 3,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      },
+    }
+});
+
+
 /*
-    Carousel
+    function open popup video
 */
-
-
-
-
-
-var player = null;
-var tag = document.createElement("script");
-tag.id = "iframe-api";
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("existing-iframe-example");
-}
-
-var elPopupClose = $(".popup__close");
-var elPopupOverlay = $(".popup__overlay");
-var elPopupToggle = $("#popup__toggle");
-
-// @see https://developers.google.com/youtube/iframe_api_reference#Playback_controls
-// @see http://stackoverflow.com/questions/8667882/how-to-pause-a-youtube-player-when-hiding-the-iframe
-function popupDidClose() {
-  if (player !== null) {
-    player.pauseVideo();
-  }
-}
-
-elPopupClose.click(function () {
-  elPopupOverlay.css({ display: "none", visibility: "hidden", opacity: 0 });
-  popupDidClose();
+$( document ).ready(function() {
+  $('#headerVideoLink').magnificPopup({
+   type:'inline',
+   midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+ });
+   
 });
 
-elPopupOverlay.click(function (event) {
-  event = event || window.event;
-  if (event.target === this) {
-    elPopupOverlay.css({ display: "none", visibility: "hidden", opacity: 0 });
-    popupDidClose();
-  }
-});
 
-elPopupToggle.click(function () {
-  elPopupOverlay.css({ display: "block", visibility: "visible", opacity: 1 });
-});
+
+
+
+Splitting()
+ScrollOut({
+  targets: '.word',
+  scrollingElement: '.container',
+})

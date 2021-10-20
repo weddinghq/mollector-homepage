@@ -10,6 +10,11 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
 </head>
@@ -21,7 +26,7 @@
       <span>loading...</span>
     </div>
   </div>
-  <div class="">
+  <div class="paralax-wrap">
     <div id="paralax1">
       <img src="images/para-atif.png" alt="">
     </div>
@@ -64,7 +69,7 @@
           <div class="mct-content-wrap w-1440">
             <span class="mct-explore">Explore and conquer</span>
             <span class="mct-the">the</span>
-            <span class="mct-ancient">Ancient</span>
+            <span class="mct-ancient">Mollector</span>
             <span class="mct-galaxy">Galaxy</span>
             <span class="mct-next">The next generation of trading card game</span>
             <div class="mct-icon">
@@ -86,19 +91,27 @@
         <!-- magical world -->
         <div class="mc-magical" id='mc-magical'>
           <div class="mcm-content-wrap">
-            <div id="trigger1"></div>
-            <div class="mcm-title" id="mcm-title">
-              There is a magical world <br>
-              where strange creatures and warriors
-            </div>
-            <div class="mcmc-des" id="mcmc-des">
-              Watch Video
-            </div>
-            <div class="popup__overlay">
-              <div class="popup">
-                <a href="#" class="popup__close">X</a>
-                <iframe id="existing-iframe-example" type="text/html" src="https://www.youtube.com/embed?v=J1MTIsq1diY&ab_channel=Mollector" frameborder="0" allowfullscreen></iframe>
+            <div class="line-trigger"></div>
+            <div class="sp-container text-start" id="text-start">
+              <div class="sp-content">
+                <div class="sp-globe"></div>
+                <h2 class="frame-1 text-magical">In a galaxy, far and far away,
+                  on the edge of the universe...</h2>
+                <h2 class="frame-2 text-magical">There is a magical world
+                  where strange creatures and warriors
+                  from different races and factions
+                  living and fighting together</h2>
+                <h2 class="frame-3 text-magical">And the ones who collect and own those warriors are known as... </h2>
+                <p class="sp-circle-link text-magical">Mollector</p>
               </div>
+            </div>
+            <a href="#headerPopup" class="mcmc-des" id="headerVideoLink" target="_blank">
+              Watch Video
+            </a>
+            <!-- open popup video -->
+            <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/J1MTIsq1diY?autoplay=1"
+                title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -137,7 +150,8 @@
                 <span class="item item-1">
                 </span>
                 <div class="slide-item-title">The Demon</div>
-                <div class="slide-item-des">The Demon is who has the passion for dark power. It allows them to lower the target's defense and deal damage.</div>
+                <div class="slide-item-des">The Demon is who has the passion for dark power. It allows them to lower the
+                  target's defense and deal damage.</div>
               </div>
               <div class="swiper-slide">
                 <span class="item item-2"></span>
@@ -148,28 +162,31 @@
               <div class="swiper-slide">
                 <span class="item item-3"></span>
                 <div class="slide-item-title">The Beast</div>
-                <div class="slide-item-des">The Beast, which was one of the most powerful races, is now only a minority group. 
+                <div class="slide-item-des">The Beast, which was one of the most powerful races, is now only a minority
+                  group.
                   They are strong teammates. They often complete quests together.
                 </div>
               </div>
               <div class="swiper-slide">
                 <span class="item item-4"></span>
                 <div class="slide-item-title">The Neutral</div>
-                <div class="slide-item-des">Not being counted as a race, Neutral includes members from other races. 
-                  They have their own distinct and unique characteristics. 
-                  The Neutral don't follow any certain sect. 
+                <div class="slide-item-des">Not being counted as a race, Neutral includes members from other races.
+                  They have their own distinct and unique characteristics.
+                  The Neutral don't follow any certain sect.
                 </div>
               </div>
               <div class="swiper-slide">
                 <span class="item item-5"></span>
                 <div class="slide-item-title">The Elemental</div>
-                <div class="slide-item-des">The Elemental was created by ancient dragon sorcerers. 
-                  By using natural elements such as ice, fire and wind, elemental warriors are the masters of battle control, AoE damage and DoT effect.</div>
+                <div class="slide-item-des">The Elemental was created by ancient dragon sorcerers.
+                  By using natural elements such as ice, fire and wind, elemental warriors are the masters of battle
+                  control, AoE damage and DoT effect.</div>
               </div>
               <div class="swiper-slide">
                 <span class="item item-6"></span>
                 <div class="slide-item-title">The Dragon</div>
-                <div class="slide-item-des">The Dragon is an old, arrogant race. Dragon warriors are strong in magic that increases strength and defense.</div>
+                <div class="slide-item-des">The Dragon is an old, arrogant race. Dragon warriors are strong in magic
+                  that increases strength and defense.</div>
               </div>
             </div>
             <div class="swiper-pagination" id="swiper-pagination"></div>
@@ -188,12 +205,11 @@
               with a unique gameplay, in which the strategy battlecard is complex and competitive for players.
             </div>
             <div class="mcg-video">
-              <video controls class="video">
-                <source
-                  src="./teaser.mp4"
-                  type="video/mp4" />
+              Coming soon
+              <!-- <video controls class="video">
+                <source src="./teaser.mp4" type="video/mp4" />
               </video>
-              <div class="playpause"></div>
+              <div class="playpause"></div> -->
             </div>
             <div class="mcg-content mcg-content-footer">
               <span>Mollector is-not-just-another-trading-card-game</span>. By being built on blockchain to apply
@@ -316,6 +332,55 @@
           </div>
           <div class="mcr-content-wrap-mobile">
             <div class="mcr-title">Mollector Roadmap</div>
+            <div class="swiper-container slider2">
+              <div class="line line-1"></div>
+              <div class="line line-2"></div>
+              <div class="line line-3"></div>
+              <div class="line line-4"></div>
+              <div class="line line-5"></div>
+              <div class="line line-6"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <span class="year year-active"> Q4 2021</span>
+                  <span class="item1 item1-active">Genesis NTF Hero card sale</span>
+                  <span class="item1 item1-active">MVP</span>
+                  <span class="item1 item1-active">Alpha Test</span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="year year1"> Q1 2022</span>
+                  <span class="item1 ">Close Beta</span>
+                  <span class="item1">Private Sales</span>
+                  <span class="item1">Public Sales</span>
+                  <span class="item1">Issue MOL Token</span>
+                  <span class="item1">PvP</span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="year year2"> Q2 2022</span>
+                  <span class="item1">Open Beta</span>
+                  <span class="item1">PvE</span>
+                  <span class="item1">Fusion</span>
+                  <span class="item1">Mutation</span>
+                  <span class="item1">Marketplace</span>
+                  <span class="item1">MOL Staking</span>
+                  <span class="item1">Run on Binance Smart Chain</span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="year year3"> Q3 2022</span>
+                  <span class="item1">Brawl mode</span>
+                  <span class="item1">World Boss</span>
+                  <span class="item1">In-game Event</span>
+                  <span class="item1">Multi-chain support</span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="year year4"> Q4 2022</span>
+                  <span class="item1">Card loans</span>
+                  <span class="item1">Guilds</span>
+                  <span class="item1">Friend list</span>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -470,6 +535,9 @@
             <a class="mfs-logo" href="">
               <img src="images/logo-mollector.png" alt="">
             </a>
+            <a class="mfs-logo mfs-logo-mobile" href="">
+              <img src="images/icon-2.png" alt="">
+            </a>
             <div class="mfs-icon">
               <a class="mfsi-icon mfsi-discord" href="">
                 <img src="images/stone-copy-2.png" alt="">
@@ -541,6 +609,14 @@
               <li><a href="">Pitch Deck</a></li>
             </ul>
           </div>
+          <div class="mfw-company mfw-company-mobile">
+            <a href="">
+              <img class="mfwc-tomo" src="images/asset-46@2x.png" alt="">
+            </a>
+            <a href="">
+              <img class="mfwc-cloud" src="images/logo-ava-fb@2x.png" alt="">
+            </a>
+          </div>
           <div class="footer-text-bottom">
             ©2021 Mollector Studio <br>
             All trademarks referenced herein are the properties of their respective owners.
@@ -568,6 +644,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"
     integrity="sha512-jYedLgTWxBXtDBdGhnUgCgbgQ5j450R2LhxXk1G+pBcbaARaEC/qsrIhOtqAAiY7UBylc6bVGH6EFR10RNBXuQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
   <script src="js/index.js"></script>
   <script>
@@ -575,6 +656,8 @@
     $(window).on('load', function () {
       $('#loading').hide();
     })
+
+    console.log(window.pageYOffset);
 
 
     gsap.registerPlugin(ScrollTrigger);
@@ -590,10 +673,10 @@
       scrub: 2,
     });
     //item motion 
-    item.to("#paralax1", { x: 0, y: -1080 }, 0)
-    item.to("#paralax2", { x: 0, y: 1500 }, 0)
-    item.to("#paralax3", { x: 0, y: 1100 }, 0)
-    item.to("#paralax4", { x: 0, y: -4000 }, 0);
+    item.to("#paralax1", { x: 0, y: -980 }, 0)
+    item.to("#paralax2", { x: 0, y: 250 }, 0)
+    item.to("#paralax3", { x: 0, y: 200 }, 0)
+    item.to("#paralax4", { x: 0, y: -600 }, 0);
     // item.to("#paralax5", { x: 0, y: 200 }, 0);
 
     //paroller 
