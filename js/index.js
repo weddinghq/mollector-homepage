@@ -10,6 +10,7 @@ $('.video').parent().click(function () {
 // Initialize Swiper
 let labels = ['pagination-1', 'pagination-2', 'pagination-3', 'pagination-4', 'pagination-5', 'pagination-6'];
 var swiper1 = new Swiper(".swiper1", {
+  // effect: 'fade',
   slidesPerView: 3,
   spaceBetween: 30,
   centeredSlides: true,

@@ -75,6 +75,10 @@ body{
 .loading-wrap .loading-img {
   z-index: 100;
   animation: bouncing 0.8s alternate infinite;
+  clip-path: polygon(50% 0%, 90% 50%, 50% 100%, 10% 50%);
+  background: #fff;
+  width: 25px;
+  height: 24px;
 }
 .loading-wrap > span{
   font-family: AvenirMedium;
@@ -966,35 +970,35 @@ body{
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item { 
   width: 400px;
   height: 450px;
-  transition: all 0.3s;
+  transition: all ease-in 0.2s;
 }
 
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item-1{
-  background: url(../images/demon_normal.png) center no-repeat;
+  background: url(../images/Dragon_normal.png) center no-repeat;
   background-size: contain;
 }
 
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item-2{
-  background: url(../images/mech_normal.png) center no-repeat;
+  background: url(../images/ele_normal.png) center no-repeat;
   background-size: contain;
 }
 
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item-3{
-  background: url(../images/thebeast_normal.png) center no-repeat;
+  background: url(../images/demon_normal.png) center no-repeat;
   background-size: contain;
 }
 
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item-4{
-  background: url(../images/neutral_normal.png) center no-repeat;
+  background: url(../images/mech_normal.png) center no-repeat;
   background-size: contain;
 }
 
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item-5{
-  background: url(../images/ele_normal.png) center no-repeat;
+  background: url(../images/thebeast_normal.png) center no-repeat;
   background-size: contain;
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide .item-6{
-  background: url(../images/Dragon_normal.png) center no-repeat;
+  background: url(../images/neutral_normal.png) center no-repeat;
   background-size: contain;
 }
 
@@ -1016,16 +1020,18 @@ body{
 
 .mc-slider .swiper .swiper-pagination { 
   bottom: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .mc-slider .swiper .swiper-pagination::before{
+.mc-slider .swiper .swiper-pagination::before{
   content: '';
+  background: url(../images/line-3.svg) center no-repeat;
   position: absolute;
-  border-bottom: 2px solid #3febd6;
-  width: 70%;
-  left: 15%;
-  top: 50px;
+  width: 80%;
+  height: 2px;
   z-index: 1;
-} */
+}
 
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active{
   transform: translateY(-50px);
@@ -1036,32 +1042,32 @@ body{
   height: 450px;
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active .item-1{
-  background: url(../images/card-de-a-active.png) center no-repeat;
+  background: url(../images/Dragon_card_active.png) center no-repeat;
   background-size: contain;
   transform: scale(1.2);
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active .item-2{
-  background: url(../images/mech-active.png) center no-repeat;
+  background: url(../images/card_ELE_active.png) center no-repeat;
   background-size: cover;
   transform: scale(1.2);
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active .item-3{
-  background: url(../images/card_beast_active.png) center no-repeat;
+  background: url(../images/card-de-a-active.png) center no-repeat;
   background-size: cover;
   transform: scale(1.2);
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active .item-4{
-  background: url(../images/card_Nentral_active.png) center no-repeat;
+  background: url(../images/mech-active.png) center no-repeat;
   background-size: cover;
   transform: scale(1.2);
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active .item-5{
-  background: url(../images/card_ELE_active.png) center no-repeat;
+  background: url(../images/card_beast_active.png) center no-repeat;
   background-size: contain;
   transform: scale(1.2);
 }
 .mc-slider .swiper .swiper-wrapper .swiper-slide-active .item-6{
-  background: url(../images/Dragon_card_active.png) center no-repeat;
+  background: url(../images/card_Nentral_active.png) center no-repeat;
   background-size: contain;
   transform: scale(1.2);
 }
@@ -1119,7 +1125,7 @@ body{
 }
 .swiper-pagination-bullet::after{
   content: '';
-  background: url(../images/group-4.svg) center no-repeat;
+  background: url(../images/group-4-slide.svg) center no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1129,15 +1135,16 @@ body{
 }
 .swiper-pagination-bullet::before{
   content: '';
-  background: url(../images/rectangle-copy-17.svg) center no-repeat;
+  /* background: url(../images/rectangle-copy-17.svg) center no-repeat; */
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
+  z-index: 3;
 }
 .swiper-pagination-bullet-active::after{
   content: '';
-  background: url(../images/rectangle-copy-23.svg) center no-repeat;
+  background: url(../images/group-4-slide-active.svg) center no-repeat;
   background-size: contain;
   width: 100%;
   height: 100%;
@@ -1146,22 +1153,22 @@ body{
   transform: scale(1.2);
 }
 .swiper-pagination-bullet-0::before{
-  background: url(../images/demon.svg) center no-repeat;
+  background: url(../images/dragon.svg) center no-repeat;
 }
 .swiper-pagination-bullet-1::before{
-  background: url(../images/mech.svg) center no-repeat;
-}
-.swiper-pagination-bullet-2::before{
-  background: url(../images/paw.svg) center no-repeat;
-}
-.swiper-pagination-bullet-3::before{
-  background: url(../images/combined-shape.svg) center no-repeat;
-}
-.swiper-pagination-bullet-4::before{
   background: url(../images/ele.svg) center no-repeat;
 }
+.swiper-pagination-bullet-2::before{
+  background: url(../images/demon.svg) center no-repeat;
+}
+.swiper-pagination-bullet-3::before{
+  background: url(../images/mech.svg) center no-repeat;
+}
+.swiper-pagination-bullet-4::before{
+  background: url(../images/paw.svg) center no-repeat;
+}
 .swiper-pagination-bullet-5::before{
-  background: url(../images/dragon.svg) center no-repeat;
+  background: url(../images/combined-shape.svg) center no-repeat;
 }
 
 
@@ -1940,7 +1947,7 @@ body{
   top: 0;
   z-index: 0;
 }
-@media only screen and (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .mc-title{
     min-height: 994px;
   }
@@ -2179,7 +2186,7 @@ body{
   }
 }
 
-@media only screen and (max-width: 1440px){
+@media screen and (max-width: 1440px){
   .mc-title .mct-content-wrap{
     padding: 0 64px;
   }
@@ -2202,9 +2209,12 @@ body{
   .m-footer .mf-wrap-footer{
     margin: 0 32px;
   }
+  .mc-slider .swiper .swiper-pagination::before{
+    width: 60%;
+  }
 }
 
-@media only screen and (max-width: 1366px){
+@media screen and (max-width: 1366px){
   .m-header{
     display: none;
   }
@@ -2212,7 +2222,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 32px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
   }
   .mcn-wrap{
     padding-top: 60px;
@@ -2236,9 +2249,15 @@ body{
   .mfw-company a .mfwc-cloud{
     max-width: 150px;
   }
+  .mc-slider .swiper .swiper-pagination::before{
+    width: 68%;
+  }
 }
 
-@media only screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
+  .m-content{
+    margin-top: 0;
+  }
   .mollecttor{
     overflow: hidden;
   }
@@ -2250,9 +2269,19 @@ body{
   }
   .mct-discord-mobile{
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: -10px;
     right: -34px;
+    z-index: 10;
+  }
+  .sp-container h2.frame-1{
+    top: -70px;
+  }
+  .sp-container h2.frame-2{
+    top: -140px;
+  }
+  .sp-container h2.frame-3{
+    top: -70px;
   }
   .mc-title{
     overflow: hidden;
@@ -2505,9 +2534,12 @@ body{
     color: #a4552a;
     margin-top: 8px;
   }
+  .mc-slider .swiper .swiper-pagination::before{
+    width: 80%;
+  }
 }
 
-@media only screen and (max-width: 996px){
+@media screen and (max-width: 996px){
   .mc-slider .swiper .swiper-pagination{
     bottom: -30px !important;
   }
@@ -2539,14 +2571,17 @@ body{
   .m-footer{
     background: #2e1101;
     position: relative;
-    min-height: 136px;
+    /* min-height: 136px; */
   }
   .m-footer .mf-wrap-footer{
     background: transparent;
   }
+  .mc-slider .swiper .swiper-pagination::before{
+    width: 70%;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mc-title .mct-content-wrap .mct-ancient{
     font-size: 50px;
     font-weight: normal;
@@ -2564,7 +2599,8 @@ body{
     letter-spacing: -1.5px;
   }
   .mc-title{
-    background: url(../images/ipad-bg-1.png);
+    background: url(../images/ipad-bg-1.png) center no-repeat;
+    background-size: cover;
     min-height: 1024px;
     position: relative;
     overflow: hidden;
@@ -2595,18 +2631,18 @@ body{
   .mc-magical{
     min-height: 615px;
     background: url(../images/planet.png) center no-repeat;
+    background-size: cover;
     overflow: hidden;
   }
   .sp-container h2.frame-1{
-    top: -50px;
-    left: 0;
+    top: 0;
   }
   .sp-container h2.frame-2{
-    top: -168px;
+    top: -78px;
     left: 0;
   }
   .sp-container h2.frame-3{
-    top: -88px;
+    top: -39px;
     left: 0;
   }
   .text-magical{
@@ -2714,7 +2750,7 @@ body{
     background-size: contain;
   }
   .swiper-pagination-bullet:not(:nth-child(1)){
-    margin-left: 60px !important;
+    margin-left: 75px !important;
   }
   .mc-gameplay{
     background: url(../images/ipad-bg-sec-4.png) center no-repeat;
@@ -2855,11 +2891,54 @@ body{
   .mcs-content{
     padding: 0 32px;
   }
+  .mc-slider .swiper .swiper-pagination::before{
+    width: 77%;
+  }
 }
-@media only screen and (max-width: 576px){
+@media screen and (max-width: 576px){
   .m-header-mobile{
-    position: relative;
-    z-index: 2;
+    padding: 0 64px;
+  }
+  .m-header-mobile img{
+    width: 100%;
+  }
+  .mc-magical{
+    min-height: 615px;
+  }
+  .mc-ancient{
+    min-height: 665px;
+  }
+  .mc-slider{
+    min-height: 840px;
+  }
+  .mc-gameplay{
+    min-height: 1024px;
+  }
+  .mc-nft{
+    min-height: 810px;
+    padding-top: 0;
+  }
+  .mc-roadmap{
+    min-height: 940px;
+    padding-top: 0;
+  }
+  .mc-mysterychest{
+    min-height: 800px;
+    padding-top: 0;
+  }
+  .mc-studio{
+    min-height: 825px;
+    padding-top: 0;
+  }
+  .sp-container h2.frame-1{
+    top: -79px;
+  }
+  
+  .sp-container h2.frame-2{
+    top: -158px;
+  }
+  .sp-container h2.frame-3{
+    top: -79px;
   }
   .mc-title .mct-content-wrap{
     justify-content: center;
@@ -2968,15 +3047,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
   .mcmc-item-mobile{
     display: none;
   }
   .mcn-title{
     text-align: center;
+    font-size: 40px;
+    letter-spacing: -0.6px;
   }
   .mcn-des{
     text-align: center;
+    margin-top: 30px;
   }
   .mcs-content{
     font-size: 15px;
@@ -2988,6 +3071,9 @@ body{
   }
   .mcr-title{
 
+  }
+  .mc-mysterychest .mcm-chest{
+    margin-top: 155px;
   }
   .m-footer .mf-wrap-footer{
     flex-direction: column;
@@ -3057,6 +3143,9 @@ body{
   .mfw-company a .mfwc-cloud{
     max-width: 110px;
   }
+  .mc-slider .swiper .swiper-pagination::before {
+    width: 70%;
+}
 }
 
 

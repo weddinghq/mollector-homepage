@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <title>Mollector</title>
   <link rel="preload" as="image" href="">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -36,7 +36,8 @@
 <body>
   <div id="loading">
     <div class="loading-wrap">
-      <img class="loading-img" src="images/loading3.svg" alt="">
+      <!-- <img class="loading-img" src="images/loading3.svg" alt=""> -->
+      <div class="loading-img"></div>
       <span>loading...</span>
     </div>
   </div>
@@ -74,7 +75,7 @@
         </div>
       </header>
       <header class="m-header-mobile">
-        <img src="images/logo-mollector.png" alt="">
+        <img src="images/menu.png" alt="">
       </header>
 
       <!-- Explore and conquer -->
@@ -173,18 +174,34 @@
               <div class="swiper-slide">
                 <span class="item item-1">
                 </span>
+
+                <div class="slide-item-title">The Dragon</div>
+                <div class="slide-item-des">The Dragon is an old, arrogant race. Dragon warriors are strong in magic
+                  that increases strength and defense.</div>
+              </div>
+              <div class="swiper-slide">
+                <span class="item item-2"></span>
+                <div class="slide-item-title">The Elemental</div>
+                <div class="slide-item-des">The Elemental was created by ancient dragon sorcerers.
+                  By using natural elements such as ice, fire and wind, elemental warriors are the masters of battle
+                  control, AoE damage and DoT effect.</div>
+              </div>
+              <div class="swiper-slide">
+                <span class="item item-3"></span>
+
                 <div class="slide-item-title">The Demon</div>
                 <div class="slide-item-des">The Demon is who has the passion for dark power. It allows them to lower the
                   target's defense and deal damage.</div>
               </div>
               <div class="swiper-slide">
-                <span class="item item-2"></span>
+                <span class="item item-4"></span>
+
                 <div class="slide-item-title">The Mech</div>
                 <div class="slide-item-des">The Mech was created by the most ancient race to serve the war. Mech
                   warriors use spare parts and energy of dead Mech to strengthen themselves</div>
               </div>
               <div class="swiper-slide">
-                <span class="item item-3"></span>
+                <span class="item item-5"></span>
                 <div class="slide-item-title">The Beast</div>
                 <div class="slide-item-des">The Beast, which was one of the most powerful races, is now only a minority
                   group.
@@ -192,25 +209,12 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <span class="item item-4"></span>
+                <span class="item item-6"></span>
                 <div class="slide-item-title">The Neutral</div>
                 <div class="slide-item-des">Not being counted as a race, Neutral includes members from other races.
                   They have their own distinct and unique characteristics.
                   The Neutral don't follow any certain sect.
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <span class="item item-5"></span>
-                <div class="slide-item-title">The Elemental</div>
-                <div class="slide-item-des">The Elemental was created by ancient dragon sorcerers.
-                  By using natural elements such as ice, fire and wind, elemental warriors are the masters of battle
-                  control, AoE damage and DoT effect.</div>
-              </div>
-              <div class="swiper-slide">
-                <span class="item item-6"></span>
-                <div class="slide-item-title">The Dragon</div>
-                <div class="slide-item-des">The Dragon is an old, arrogant race. Dragon warriors are strong in magic
-                  that increases strength and defense.</div>
               </div>
             </div>
             <div class="swiper-pagination" id="swiper-pagination"></div>
@@ -681,8 +685,6 @@
       $('#loading').hide();
     })
 
-    console.log(window.pageYOffset);
-
 
     gsap.registerPlugin(ScrollTrigger);
     let speed = 100;
@@ -718,14 +720,14 @@
     $('.mct-title').paroller();
     $('.fire-atend').paroller();
 
-    function onceLoaded(){
-        // this callback function could be a script from any other file etc
-        //console.log("onceLoaded fired");
-        var mainContent = document.getElementById("mollecttor");
-        mainContent.style.opacity = 1;
-        mainContent.style.visibility = "visible";
+    function onceLoaded() {
+      // this callback function could be a script from any other file etc
+      //console.log("onceLoaded fired");
+      var mainContent = document.getElementById("mollecttor");
+      mainContent.style.opacity = 1;
+      mainContent.style.visibility = "visible";
     }
-    
+
     imageBgPreload(onceLoaded);
 
 
