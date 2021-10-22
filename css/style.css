@@ -2274,7 +2274,14 @@ img{
     max-width: 150px;
   }
   .mc-slider .swiper .swiper-pagination::before{
-    width: 68%;
+    width: 65%;
+  }
+  .mc-studio{
+    min-height: 880px;
+  }
+  .m-footer{
+    min-height: 250px;
+    margin-top: -250px;
   }
 }
 
@@ -2602,10 +2609,10 @@ img{
 
   }
   .m-footer{
-    /* background: #2e1101; */
+    background: transparent;
     /* position: relative; */
     /* min-height: 136px; */
-    margin-top: -310px;
+    margin-top: -325px;
   }
   .m-footer .mf-wrap-footer{
     background: transparent;
