@@ -80,12 +80,24 @@ var slider2 = new Swiper('.slider2', {
 /*
     function open popup video
 */
-$(document).ready(function () {
-  $('#headerVideoLink').magnificPopup({
-    type: 'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });
-
+$('#headerVideoLink').magnificPopup({
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 400,
+	preloader: false,
+	iframe: {
+    markup: '<div class="mfp-iframe-scaler">' +
+			'<div class="mfp-close"></div>' +
+			'<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' +
+			'</div>',
+		patterns: {
+			youtube: {
+				index: 'youtube.com',
+				id: 'v=',
+				src: 'https://www.youtube.com/embed/J1MTIsq1diY?autoplay=1'
+			}
+		}
+	},
 });
 
 
@@ -168,6 +180,12 @@ function imageBgPreload(onComplete) {
     }
   }
 }
+
+$('#headerPopup').on('pumBeforeOpen', function () {
+    var $iframe = jQuery('iframe', jQuery(this)),
+      src = $iframe.prop('src');
+    $iframe.prop('src', '').prop('src', src + '?autoplay=1');
+  });
 
 
 
