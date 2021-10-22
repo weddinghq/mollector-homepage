@@ -88,7 +88,7 @@ $('#headerVideoLink').magnificPopup({
 	iframe: {
     markup: '<div class="mfp-iframe-scaler">' +
 			'<div class="mfp-close"></div>' +
-			'<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' +
+			'<iframe class="mfp-iframe" frameborder="0" allow="autoplay" allowfullscreen></iframe>' +
 			'</div>',
 		patterns: {
 			youtube: {
