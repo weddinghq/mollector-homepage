@@ -945,6 +945,7 @@ img{
   background-size: cover;
   min-height: 1330px;
   position: relative;
+  overflow: hidden;
 }
 
 .mc-slider .paroller-left { 
@@ -1398,6 +1399,7 @@ img{
   background: url(../images/sec-6.png) center no-repeat;
   background-size: cover;
   min-height: 1080px;
+  overflow: hidden;
 }
 .mc-mysterychest .mcm-title{
   /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 3px 3px 0 #c9fffb; */
