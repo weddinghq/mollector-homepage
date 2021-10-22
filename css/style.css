@@ -209,7 +209,7 @@ img{
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .m-header-mobile{
   display: none;
@@ -285,6 +285,7 @@ img{
   flex-wrap: wrap;
   position: relative;
   z-index: 3;
+  padding: 0 50px;
 }
 .mct-discord-mobile{
   display: none;
@@ -554,7 +555,7 @@ img{
 }
 
 .mc-ancient .mca-content-wrap { 
-
+  padding: 0 50px;
 }
 
 .mc-ancient .mca-content-wrap .mca-title { 
@@ -669,14 +670,15 @@ img{
     overflow: hidden;
   }
   .text-magical{
-    font-family: Avenir;
-    font-size: 50px;
+    /* font-family:  */
+    font-family: Rodfat-Two-Demo;
+    font-size: 25px;
     color: #fff;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
-    letter-spacing: -1.09px;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #0000004d;
   }
   h1.main, p.demos {
     -webkit-animation-delay: 18s;
@@ -688,8 +690,11 @@ img{
     width: 100%;
     height: 100%;
     z-index: 1000;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 10px;
   }
-  .sp-container h2 {
+  /* .sp-container h2 {
     width: 100%;
     text-align: center;
     color: transparent;
@@ -697,8 +702,8 @@ img{
     -moz-animation: blurFadeInOut 3s ease-in backwards;
     -ms-animation: blurFadeInOut 3s ease-in backwards;
     animation: blurFadeInOut 3s ease-in backwards;
-  }
-  .sp-container h2.frame-1 {
+  } */
+  /* .sp-container h2.frame-1 {
     -webkit-animation-delay: 0s;
     -moz-animation-delay: 0s;
     -ms-animation-delay: 0s;
@@ -737,9 +742,8 @@ img{
     -moz-animation-delay: 9s;
     -ms-animation-delay: 9s;
     animation-delay: 9s;
-  }
-  .sp-globe {
-    /* margin: -137px 0 0 -141px; */
+  } */
+  /* .sp-globe {
     background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
     -webkit-animation: fadeInBack 3.6s linear 14s backwards;
     -moz-animation: fadeInBack 3.6s linear 14s backwards;
@@ -749,15 +753,15 @@ img{
     filter: alpha(opacity=30);
     opacity: 0.3;
   
-  }
-  .sp-circle-link {
+  } */
+  /* .sp-circle-link {
     padding: 0 300px;
     text-align: center;
     -webkit-animation: blurFadeIn 1s linear 10s backwards;
     -moz-animation: blurFadeIn 1s linear 10s backwards;
     -ms-animation: blurFadeIn 1s linear 10s backwards;
     animation: blurFadeIn 1s linear 10s backwards;
-  }
+  } */
   
   /**/
   
@@ -1045,7 +1049,7 @@ img{
   content: '';
   background: url(../images/line-3.svg) center no-repeat;
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 2px;
   z-index: 1;
 }
@@ -1138,7 +1142,7 @@ img{
   outline: none;
 }
 .swiper-pagination-bullet:not(:nth-child(1)){
-  margin-left: 220px !important;
+  margin-left: 200px !important;
 }
 .swiper-pagination-bullet::after{
   content: '';
@@ -2291,6 +2295,7 @@ img{
     bottom: -10px;
     right: -34px;
     z-index: 10;
+    width: 100px;
   }
   .sp-container h2.frame-1{
     top: -70px;
@@ -2628,12 +2633,12 @@ img{
   .mc-title{
     background: url(../images/ipad-bg-1.png) center no-repeat;
     background-size: cover;
-    min-height: 1024px;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
   }
   .mc-title .mct-content-wrap{
-    padding: 0 32px;
+    padding: 200px 32px 0 32px;
   }
   .mc-title .mct-content-wrap .mct-next{
     font-size: 12.7px;
@@ -2673,13 +2678,14 @@ img{
     left: 0;
   }
   .text-magical{
-    font-size: 30px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
-    letter-spacing: -0.65px;
     padding: 0 12px;
+    font-family: Rodfat-Two-Demo;
+    text-shadow: 0 0 5px #0000004d;
   }
   .mc-magical .mcm-content-wrap .mcm-title{
     font-size: 30px;
@@ -2749,7 +2755,8 @@ img{
     position: absolute;
     bottom: -165px;
     width: 450px;
-    padding: 0 32px;
+    max-width: 100%;
+    padding: 0 0px;
   }
   .mc-slider .swiper .swiper-wrapper .swiper-slide .item{
     width: 250px;
@@ -2942,7 +2949,7 @@ img{
     min-height: 1024px;
   }
   .mc-nft{
-    min-height: 810px;
+    min-height: 100vh;
     padding-top: 0;
   }
   .mc-roadmap{
@@ -3091,7 +3098,7 @@ img{
     margin-top: 30px;
   }
   .mcs-content{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -3151,7 +3158,7 @@ img{
   }
   .mfw-company-mobile{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
   }
