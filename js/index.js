@@ -81,23 +81,57 @@ var slider2 = new Swiper('.slider2', {
     function open popup video
 */
 $('#headerVideoLink').magnificPopup({
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 400,
-	preloader: false,
-	iframe: {
+  type: 'iframe',
+  mainClass: 'mfp-fade',
+  removalDelay: 400,
+  preloader: false,
+  iframe: {
     markup: '<div class="mfp-iframe-scaler">' +
-			'<div class="mfp-close"></div>' +
-			'<iframe class="mfp-iframe" frameborder="0" allow="autoplay" allowfullscreen></iframe>' +
-			'</div>',
-		patterns: {
-			youtube: {
-				index: 'youtube.com',
-				id: 'v=',
-				src: 'https://www.youtube.com/embed/J1MTIsq1diY?autoplay=1'
-			}
-		}
-	},
+      '<div class="mfp-close"></div>' +
+      '<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' +
+      '</div>',
+    patterns: {
+      youtube: {
+        index: 'youtube.com',
+        id: 'v=',
+        src: 'https://www.youtube.com/embed/J1MTIsq1diY?autoplay=1'
+      }
+    }
+  },
+});
+
+var swiperTeam = new Swiper(".swiperTeam", {
+  slidesPerView: 3,
+  // slidesPerGroup: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".pagination",
+    clickable: true,
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+
+  }
 });
 
 
@@ -182,10 +216,10 @@ function imageBgPreload(onComplete) {
 }
 
 $('#headerPopup').on('pumBeforeOpen', function () {
-    var $iframe = jQuery('iframe', jQuery(this)),
-      src = $iframe.prop('src');
-    $iframe.prop('src', '').prop('src', src + '?autoplay=1');
-  });
+  var $iframe = jQuery('iframe', jQuery(this)),
+    src = $iframe.prop('src');
+  $iframe.prop('src', '').prop('src', src + '?autoplay=1');
+});
 
 
 
