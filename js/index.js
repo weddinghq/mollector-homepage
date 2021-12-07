@@ -103,6 +103,10 @@ $('#headerVideoLink').magnificPopup({
 var swiperTeam = new Swiper(".swiperTeam", {
   slidesPerView: 3,
   // slidesPerGroup: 3,
+  autoplay: {
+    delay: 4000,
+  },
+  pauseOnMouseEnter: true,
   spaceBetween: 30,
   pagination: {
     el: ".pagination",
