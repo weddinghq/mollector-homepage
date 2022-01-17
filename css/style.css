@@ -1680,8 +1680,12 @@ img{
   top: 25px;
 }
 .twiti-icon-2{
-  background: url(../images/group-13.svg) center no-repeat;
-  background-position: -49px -6px;
+  background: url(../images/mollector-dice-2.png) center no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  left: 4px;
+  top: 20px;
 }
 .twiti-icon-3{
   background: url(../images/group-13.svg) center no-repeat;
@@ -2566,7 +2570,7 @@ img{
     content: '';
     background: url(../images/group-13.svg) center no-repeat;
     background-size: cover;
-    background-position: 0 0;
+    background-position: -2px 0;
     width: 21px;
     height: 26px;
     position: absolute;
@@ -2575,6 +2579,15 @@ img{
   }
   .mcr-content-wrap-mobile .swiper-container .swiper-wrapper .swiper-slide .year-active::after{
     background-position: -2px 0;
+  }
+  .mcr-content-wrap-mobile .swiper-container .swiper-wrapper .swiper-slide .year-active::before{
+    background: url(../images/rectangle.svg) center no-repeat;
+    background-size: contain;
+  }
+  .mcr-content-wrap-mobile .swiper-container .swiper-wrapper .swiper-slide .year-bg::after{
+    background: url(/images/mollector-dice-2.png) center no-repeat;
+    background-size: cover;
+    background-position: center !important;
   }
   .mcr-content-wrap-mobile .swiper-container .swiper-wrapper .swiper-slide .year1::after{
     background-position: -20px 0;
