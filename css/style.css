@@ -1907,7 +1907,7 @@ img{
 
 /* studio */
 .mc-studio{
-  min-height: 1080px;
+  min-height: 1090px;
   background: url(../images/footer-1.png) center no-repeat;
   background-size: cover;
 }
@@ -1937,7 +1937,7 @@ img{
   left: 0;
 }
 .mcs-content{
-  margin-top: 80px;
+  margin-top: 50px;
   font-family: Avenir;
   font-size: 23px;
   font-weight: 500;
@@ -2150,6 +2150,26 @@ img{
   width: 100px;
   top: 0;
   z-index: 0;
+}
+.partners-wrap{
+  margin: 32px 0;
+}
+.pw-title{
+  font-family: Rodfat-Two-Demo;
+    font-size: 23px;
+    line-height: 1.74;
+    letter-spacing: -0.46px;
+    color: #ff9921;
+    text-align: center;
+}
+.pw-sub-title{
+  font-family: Avenir;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.46px;
+  text-align: center;
+  color: #fff;
 }
 @media screen and (max-width: 1920px) {
   .mc-title{
@@ -2390,6 +2410,13 @@ img{
     line-height: normal;
     letter-spacing: -0.38px;
   }
+  .pw-sub-title{
+    font-size: 19px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.38px;
+  }
   .mc-team{
     margin-top: -1px;
   }
@@ -2447,6 +2474,9 @@ img{
     padding: 0;
   }
   .mf-title{
+    font-size: 18px;
+  }
+  .pw-title{
     font-size: 18px;
   }
   .mf-findout ul li a{
@@ -2726,6 +2756,14 @@ img{
     line-height: 2.67;
     letter-spacing: -0.3px;
   }
+  .pw-title{
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.67;
+    letter-spacing: -0.3px;
+  }
   .mf-findout ul li a{
     font-size: 17px;
     font-weight: 500;
@@ -2767,6 +2805,9 @@ img{
     min-height: 1042px;
     margin-top: -1px;
     padding-top: 0;
+  }
+  .partners-wrap{
+    margin: 18px 0;
   }
 }
 
@@ -2810,6 +2851,9 @@ img{
   }
   .mc-slider .swiper .swiper-pagination::before{
     width: 70%;
+  }
+  .fire-atend{
+    display: none;
   }
 }
 
@@ -3313,7 +3357,15 @@ img{
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.3px;
-    margin-top: 50px;
+    margin-top: 0;
+  }
+  .pw-sub-title{
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
   }
   .mcr-title{
     padding: 0 16px;
