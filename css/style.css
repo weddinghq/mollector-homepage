@@ -2838,6 +2838,9 @@ img{
   .partners-wrap{
     margin: 18px 0;
   }
+  .pw-item-wrap{
+    padding: 0 32px;
+  }
 }
 
 @media screen and (max-width: 996px){
