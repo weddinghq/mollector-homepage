@@ -1604,16 +1604,22 @@ img{
   top: 152px;
 }
 .line-3{
-  top: 212px;
+  top: 241px;
 }
 .line-4{
-  top: 273px;
+  top: 304px;
 }
 .line-5{
-  top: 333px;
+  top: 373px;
 }
 .line-6{
-  top: 396px;
+  top: 436px;
+}
+.line-7{
+  top: 497px;
+}
+.line-8{
+  top: 557px;
 }
 .wrap-title{
   display: flex;
@@ -2172,6 +2178,9 @@ img{
 }
 .pwiw-item img {
   width: 100%;
+}
+.pwiw-item-crvn img{
+  width: 75%;
 }
 .pw-title{
   font-family: Rodfat-Two-Demo;
@@ -3236,7 +3245,7 @@ img{
   .mc-studio{
     background: url(../images/footer375-22.png) center no-repeat;
     background-size: cover;
-    min-height: 1600px;
+    min-height: 1755px;
     padding-top: 0;
   }
   .sp-container h2.frame-1{
