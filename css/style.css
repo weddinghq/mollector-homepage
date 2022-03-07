@@ -2169,12 +2169,13 @@ img{
   flex-wrap: wrap;
   max-width: 960px;
   margin: auto;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .pwiw-item{
   width: 24%;
   margin-top: 32px;
+  padding-left: 8px;
 }
 .pwiw-item img {
   width: 100%;
