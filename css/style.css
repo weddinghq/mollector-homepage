@@ -2173,9 +2173,12 @@ img{
   align-items: center;
 }
 .pwiw-item{
-  width: 24%;
+  width: 22%;
   margin-top: 32px;
-  padding-left: 8px;
+}
+.pwiw-item:not(:nth-child(4n + 1)){
+  width: 24%;
+  margin-left: 2%;
 }
 .pwiw-item img {
   width: 100%;
