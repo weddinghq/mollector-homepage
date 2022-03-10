@@ -2185,6 +2185,7 @@ img{
 }
 .pwiw-item-crvn img{
   width: 75%;
+  margin-left: 24px;
 }
 .pw-title{
   font-family: Rodfat-Two-Demo;
@@ -3216,6 +3217,9 @@ img{
   }
   .mc-team{
     margin-top: -1px;
+  }
+  .pwiw-item-crvn img{
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 576px){
