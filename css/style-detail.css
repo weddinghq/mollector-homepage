@@ -1,0 +1,153 @@
+.news-detail{
+  background: url(/Images/bg-section-2.png);
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+}
+.nd-wrap{
+  margin: auto;
+  max-width: 1200px;
+  padding-top: 64px;
+}
+.ndw-logo a{
+  display: block;
+  text-align: center;
+}
+.ndw-wrap-item{
+  opacity: 0.82;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #001430;
+  text-align: center;
+  padding: 44px 100px;
+  margin-top: 32px;
+}
+.ndwwi-sub-title{
+  background-image: linear-gradient(to bottom, #46ffde 1%, #32c4fc 98%);
+  font-family: Rodfat-Two-Demo;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ndwwi-main-title{
+  /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 3px 3px 0 #c9fffb; */
+  -webkit-text-stroke: 2px #0a5c99;
+  background-image: linear-gradient(to bottom, #46ffde 1%, #32c4fc 98%);
+  font-family: Rodfat-Two-Demo;
+  font-size: 77px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.54px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ndwwi-des{
+  font-family: Avenir;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.61;
+  letter-spacing: -0.46px;
+  text-align: center;
+  color: #45fbe0;
+}
+.ndwwi-line{
+  width: 100%;
+  height: 1px;
+  background: #34e9eb;
+}
+.ndwwi-content{
+  margin-top: 50px;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.32px;
+  color: #fff;
+  text-align: left;
+}
+.ndwwi-button{
+  border-radius: 18px;
+  box-shadow: 0 2px 4px 0 #4c1c00, inset 3px 3px 0 0 #ffb45b;
+  background-image: linear-gradient(to bottom, #f49d03 15%, #fd5d03 61%, #ac4534);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rodfat-Two-Demo;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 100px;
+  display: inline-block;
+  padding: 18px;
+}
+.nd-icon-wrap{
+  margin-top: 64px;
+}
+.nd-icon-wrap .mfs-icon{
+  justify-content: center;
+}
+.nd-text-bottom{
+  margin-top: 64px;
+  padding-bottom: 64px;
+}
+.ndtb-wrap{
+  margin: auto;
+  max-width: 400px;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #f7e2d7;
+}
+@media screen and (max-width: 996px) {
+  .nd-wrap{
+    padding: 0 32px;
+  }
+  .ndw-wrap-item{
+    padding: 44px 64px;
+  }
+  .ndwwi-main-title{
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nd-wrap{
+    padding: 0 32px;
+  }
+  .ndw-wrap-item{
+    padding: 44px 64px;
+  }
+  .ndwwi-main-title{
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nd-wrap{
+    padding: 0 32px;
+  }
+  .ndw-wrap-item{
+    padding: 44px 16px;
+  }
+}
