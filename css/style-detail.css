@@ -80,6 +80,13 @@
   color: #fff;
   text-align: left;
 }
+.nc-highlight{
+  font-weight: 700;
+  font-size: 20px;
+}
+.nc-content{
+  padding-left: 120px;
+}
 .ndwwi-button{
   border-radius: 18px;
   box-shadow: 0 2px 4px 0 #4c1c00, inset 3px 3px 0 0 #ffb45b;
@@ -131,6 +138,9 @@
   .ndwwi-main-title{
     font-size: 55px;
   }
+  .nc-content{
+    padding-left: 32px;
+  }
 }
 @media screen and (max-width: 768px) {
   .nd-wrap{
@@ -142,6 +152,9 @@
   .ndwwi-main-title{
     font-size: 55px;
   }
+  .nc-content{
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .nd-wrap{
@@ -149,5 +162,8 @@
   }
   .ndw-wrap-item{
     padding: 44px 16px;
+  }
+  .ndwwi-main-title{
+    font-size: 28px;
   }
 }
