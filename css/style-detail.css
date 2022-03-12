@@ -1,5 +1,5 @@
 .news-detail{
-  background: url(/Images/bg-section-2.png);
+  background: url(../images/bg-section-2.png);
   width: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -75,7 +75,7 @@
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 1.5;
   letter-spacing: -0.32px;
   color: #fff;
   text-align: left;
