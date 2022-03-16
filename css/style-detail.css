@@ -54,7 +54,7 @@
 }
 .ndwwi-des{
   font-family: Avenir;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -71,7 +71,7 @@
 .ndwwi-content{
   margin-top: 50px;
   font-family: Avenir;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -82,10 +82,11 @@
 }
 .nc-highlight{
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
 }
 .nc-content{
-  padding-left: 120px;
+  padding-left: 64px;
+  line-height: 32px;
 }
 .ndwwi-button{
   border-radius: 18px;
