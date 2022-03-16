@@ -1642,6 +1642,51 @@ img{
   background: url(../images/group-14.svg) center no-repeat;
   background-position: -185px -1px;
 }
+.tokenomic-wrap{
+  display: flex;
+}
+.tokenomic-twi-item{
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #fff;
+  min-height: 80px;
+  position: relative;
+  display: flex;
+}
+.tokenomic-twi-title{
+  font-family: Rodfat-Two-Demo;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #ff8b00;
+}
+.tokenomic-wrap .tokenomic-w-35{
+  width: 35%;
+}
+.tokenomic-wrap .tokenomic-w-10{
+  width: 10%;
+}
+.tabcontent-img{
+  text-align: center;
+}
+.tabcontent-img img{
+  width: 50%;
+}
+.m-calendar{
+  display: none;
+}
+.m-question{
+  display: none;
+}
 
 /* Mollector Roadmap */
 .mc-roadmap{
@@ -1909,6 +1954,51 @@ img{
   min-width: 200px;
   min-height: 60px;
   position: relative;
+}
+.tablinktoken{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-text-stroke: 1px #0a5c99;
+  background-image: linear-gradient(to bottom, #46ffde 1%, #32c4fc 98%);
+  font-family: Rodfat-Two-Demo;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 200px;
+  min-height: 60px;
+  position: relative;
+}
+.tablinktoken::before{
+  content: '';
+  background: url(../images/six.svg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tablinktoken:nth-last-child(1){
+  margin-left: 12px;
+}
+.tablinktoken.tablinktoken-active::before{
+  content: '';
+  background: url(../images/six-active.svg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .tablink::before{
   content: '';
@@ -2974,6 +3064,12 @@ img{
   .pw-item-wrap{
     padding: 0 32px;
   }
+  .tokenomic-wrap .tokenomic-w-35{
+    width: 30%;
+  }
+  .tokenomic-wrap .tokenomic-w-10{
+    width: 15%;
+  }
 }
 
 @media screen and (max-width: 996px){
@@ -3632,6 +3728,22 @@ img{
     background: url(../images/six-active.svg) center no-repeat;
     background-size: contain;
   }
+  .tablinktoken{
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    min-width: 165px;
+    min-height: 50px;
+  }
+  .tablinktoken::before{
+    content: '';
+    background: url(../images/six.svg) center no-repeat;
+    background-size: contain;
+  }
+  .tablinktoken.tablinktoken-active::before{
+    content: '';
+    background: url(../images/six-active.svg) center no-repeat;
+    background-size: contain;
+  }
   .mct-title{
     width: 180px;
     height: 100px;
@@ -3679,6 +3791,134 @@ img{
   .pwiw-item img{
     max-width: 120px;
   }
+  .tabcontent-img img{
+    width: 74%;
+  }
+  .tokenomic-twi-hidden{
+    display: none;
+  }
+  .tokenomic-twi-title{
+    font-size: 15px;
+    line-height: -0.3px;
+  }
+  .tokenomic-twi-item{
+    font-size: 14px;
+    line-height: -0.28px;
+    min-height: 50px;
+  }
+  .tokenomic-wrap{
+    justify-content: space-between;
+  }
+  .tokenomic-wrap .tokenomic-w-10{
+    width: 30%;
+  }
+  .m-calendar{
+    display: block;
+    right: -15px;
+    top: 3px;
+  }
+  .m-question{
+    display: block;
+    right: -15px;
+    top: 3px;
+  }
 }
 
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative; /* opinion 1 */
+}
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none; /* opinion 2 */
+  font-size: .9em; /* opinion 3 */
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent; /* opinion 4 */
+  z-index: 1001; /* absurdity 1 */
+}
+[tooltip]::after {
+  content: attr(tooltip); /* magic! */
+  
+  /* most of the rest of this is opinion */
+  font-family: Avenir;
+  font-size: 13px;
+  letter-spacing: -0.28px;
+  color: #3febd6;
+  text-align: center;
+  
+  /* 
+    Let the content set the size of the tooltips 
+    but this will also keep them from being obnoxious
+    */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  z-index: 1000; /* absurdity 2 */
+}
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
 
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+/* FX All The Things */ 
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="up"]:hover::before,
+[tooltip][flow^="up"]:hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after,
+[tooltip][flow^="right"]:hover::before,
+[tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
