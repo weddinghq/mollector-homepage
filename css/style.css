@@ -1933,6 +1933,11 @@ img{
   align-items: center;
   margin-top: 32px;
 }
+.tokenomic-content{
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 64px;
+}
 .tablink{
   border: none;
   outline: none;
@@ -3808,6 +3813,7 @@ img{
   }
   .tokenomic-wrap{
     justify-content: space-between;
+    padding: 0 16px;
   }
   .tokenomic-wrap .tokenomic-w-10{
     width: 30%;
