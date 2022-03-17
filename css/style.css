@@ -2410,6 +2410,12 @@ img{
   width: 75%;
   margin-left: 24px;
 }
+.pwiw-item-neko img{
+  max-width: 100px;
+}
+.pwiw-item-kdg img{
+  max-width: 150px;
+}
 .pw-title{
   font-family: Rodfat-Two-Demo;
     font-size: 23px;
