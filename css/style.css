@@ -405,6 +405,11 @@ img{
   display: flex;
   align-items: center;
 }
+.miw-item:not(:nth-child(1)){
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
 .miwi-left{
   display: flex;
   flex-direction: column;
@@ -2449,8 +2454,14 @@ img{
   width: 75%;
   margin-left: 24px;
 }
+.pwiw-item-neko{
+  text-align: center;
+}
 .pwiw-item-neko img{
   max-width: 100px;
+}
+.pwiw-item-kdg{
+  text-align: center;
 }
 .pwiw-item-kdg img{
   max-width: 150px;
