@@ -92,12 +92,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
 .nc-flex .nc-highlight{
   width: 50%;
 }
 .nc-flex:not(:nth-child(1)){
   margin-top: 24px;
+}
+.ncf-video{
+  width: 40%;
+  height: 240px;
+  position: relative;
+  background: url(../images/group-2.png) center no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 40px 40px 50px 50px;
+  font-family: AvenirMedium;
+  font-size: 23px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.46px;
 }
 .nc-content a{
   color: #fff;
@@ -192,6 +213,9 @@
   }
   .nc-content{
     padding-left: 0;
+  }
+  .ncf-video{
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
