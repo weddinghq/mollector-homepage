@@ -88,8 +88,23 @@
   padding-left: 64px;
   line-height: 32px;
 }
+.nc-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nc-flex .nc-highlight{
+  width: 50%;
+}
+.nc-flex:not(:nth-child(1)){
+  margin-top: 24px;
+}
 .nc-content a{
   color: #fff;
+}
+.play-button{
+  max-width: 30px;
+  margin-right: 8px;
 }
 .ndwwi-button{
   border-radius: 18px;
@@ -108,6 +123,25 @@
   margin-top: 100px;
   display: inline-block;
   padding: 18px;
+}
+.ndwwi-button-watch{
+  border-radius: 18px;
+  box-shadow: 0 2px 4px 0 #4c1c00, inset 3px 3px 0 0 #ffb45b;
+  background-image: linear-gradient(to bottom, #f49d03 15%, #fd5d03 61%, #ac4534);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rodfat-Two-Demo;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 18px;
+  display: flex;
+  width: 20%;
 }
 .nd-icon-wrap{
   margin-top: 64px;
