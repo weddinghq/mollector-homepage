@@ -94,7 +94,7 @@ $('#headerVideoLink').magnificPopup({
       youtube: {
         index: 'youtube.com',
         id: 'v=',
-        src: 'https://www.youtube.com/embed/J1MTIsq1diY?autoplay=1'
+        src: 'https://www.youtube.com/embed/74BnYKXXUJ8?autoplay=1'
       }
     }
   },
