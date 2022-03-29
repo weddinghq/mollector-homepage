@@ -3411,7 +3411,7 @@ img{
   }
   .mc-slider .swiper .swiper-wrapper .swiper-slide-active .slide-item-des{
     position: absolute;
-    bottom: -165px;
+    bottom: -200px;
     width: 450px;
     max-width: 100%;
     padding: 0 0px;
