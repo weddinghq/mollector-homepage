@@ -197,6 +197,38 @@ img{
   margin: auto;
   position: relative;
 }
+.m-contract{
+  position: relative;
+  background: #2f1101;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+}
+.m-contract span{
+  font-family: Rodfat-Two-Demo;
+  font-size: 15px;
+  color: #ffd692;
+}
+.m-contract a{
+  border-radius: 18px;
+  box-shadow: 0 2px 4px 0 #4c1c00, inset 3px 3px 0 0 #ffb45b;
+  background-image: linear-gradient(to bottom, #f49d03 15%, #fd5d03 61%, #ac4534);
+  color: #fff;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rodfat-Two-Demo;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.4px;
+  width: 150px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 10px;
+}
 
 /* header */
 .m-header { 
@@ -2771,7 +2803,7 @@ img{
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 10;
     width: 100%;
   }
@@ -3966,6 +3998,23 @@ img{
   }
   .tokenomic-line-8{
     top: 395px;
+  }
+  .m-contract{
+    justify-content: space-between;
+    padding: 0 8px;
+    z-index: 11;
+    min-height: 80px;
+  }
+  .m-contract span{
+    font-family: Rodfat-Two-Demo;
+    font-size: 11px;
+    color: #ffd692;
+    width: calc(100% - 100px);
+  }
+  .m-contract a{
+    padding: 10px;
+    font-size: 10px;
+    width: 70px;
   }
 }
 
