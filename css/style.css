@@ -3606,6 +3606,9 @@ img{
   .pwiw-item-crvn img{
     margin-left: 0;
   }
+  .miwi-right{
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 576px){
   .m-header-mobile{
