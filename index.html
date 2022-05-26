@@ -1,115 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Mollector</title>
+    <link rel="preload" as="image" href="" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+    <link
+      rel="preload"
+      href="images/ele_normal.png"
+      as="image"
+      media="(max-width: 400px)"
+    />
+    <link
+      rel="preload"
+      href="images/card-ele-active.png"
+      as="image"
+      media="(max-width: 450px)"
+    />
+    <link
+      rel="preload"
+      href="images/demon_normal.png"
+      as="image"
+      media="(max-width: 400px)"
+    />
+    <link
+      rel="preload"
+      href="images/card-de-a-active.png"
+      as="image"
+      media="(max-width: 450px)"
+    />
+    <link
+      rel="preload"
+      href="images/mech_normal.png"
+      as="image"
+      media="(max-width: 400px)"
+    />
+    <link
+      rel="preload"
+      href="images/mech_active.png"
+      as="image"
+      media="(max-width: 450px)"
+    />
+    <link
+      rel="preload"
+      href="images/thebeast_normal.png"
+      as="image"
+      media="(max-width: 400px)"
+    />
+    <link
+      rel="preload"
+      href="images/card_beast_active.png"
+      as="image"
+      media="(max-width: 450px)"
+    />
+    <link
+      rel="preload"
+      href="images/neutral_normal.png"
+      as="image"
+      media="(max-width: 400px)"
+    />
+    <link
+      rel="preload"
+      href="images/card_Nentral_active.png"
+      as="image"
+      media="(max-width: 450px)"
+    />
+    <link
+      rel="preload"
+      href="images/Dragon_normal.png"
+      as="image"
+      media="(max-width: 400px)"
+    />
+    <link
+      rel="preload"
+      href="images/Dragon_card_active.png"
+      as="image"
+      media="(max-width: 450px)"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <title>Mollector</title>
-  <link rel="preload" as="image" href="">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-  <link rel="preload" href="images/ele_normal.png" as="image" media="(max-width: 400px)">
-  <link rel="preload" href="images/card-ele-active.png" as="image" media="(max-width: 450px)">
-  <link rel="preload" href="images/demon_normal.png" as="image" media="(max-width: 400px)">
-  <link rel="preload" href="images/card-de-a-active.png" as="image" media="(max-width: 450px)">
-  <link rel="preload" href="images/mech_normal.png" as="image" media="(max-width: 400px)">
-  <link rel="preload" href="images/mech_active.png" as="image" media="(max-width: 450px)">
-  <link rel="preload" href="images/thebeast_normal.png" as="image" media="(max-width: 400px)">
-  <link rel="preload" href="images/card_beast_active.png" as="image" media="(max-width: 450px)">
-  <link rel="preload" href="images/neutral_normal.png" as="image" media="(max-width: 400px)">
-  <link rel="preload" href="images/card_Nentral_active.png" as="image" media="(max-width: 450px)">
-  <link rel="preload" href="images/Dragon_normal.png" as="image" media="(max-width: 400px)">
-  <link rel="preload" href="images/Dragon_card_active.png" as="image" media="(max-width: 450px)">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/reset.css">
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PPJHSM5");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PPJHSM5');</script>
-  <!-- End Google Tag Manager -->
-</head>
-
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPJHSM5"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PPJHSM5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  <div id="loading">
-    <div class="loading-wrap">
-      <!-- <img class="loading-img" src="images/loading3.svg" alt=""> -->
-      <div class="loading-img"></div>
-      <span>loading...</span>
+    <div id="loading">
+      <div class="loading-wrap">
+        <!-- <img class="loading-img" src="images/loading3.svg" alt=""> -->
+        <div class="loading-img"></div>
+        <span>loading...</span>
+      </div>
     </div>
-  </div>
-  <div class="paralax-wrap">
-    <div id="paralax1">
-      <img src="images/para-atif.png" alt="">
-    </div>
-    <div id="paralax2">
-      <img src="images/parallax-c-2.png" alt="">
-    </div>
-    <div id="paralax3">
-      <img src="images/para-1.png" alt="">
-    </div>
-    <div id="paralax4">
-      <img src="images/group-left.png" alt="">
-    </div>
-    <div class="mollecttor" id="mollecttor">
-      <div class="m-contract"><span>Contract address: <span id="contract">0x06597FFaFD82E66ECeD9209d539032571ABD50d9</span></span> <img title="copy" class="copy-contract" src="/images/copycontract.png" alt="" onclick="copyToClipboard('#contract')"> <a target="_blank" rel="noopener noreferrer" href="https://pancakeswap.finance/swap?outputCurrency=0x06597FFaFD82E66ECeD9209d539032571ABD50d9">BUY MOL</a></div>
-      <header class="m-header w-1440">
-        <div class="mh-">
-          <div class="mh-wrap">
-            <a class="mfsi-icon mfsi-discord" target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/QzBCXBxrcV">
-              <img src="images/stone-copy-2.png" alt="">
-              <span class="mfsi-img"></span>
-            </a>
-            <a class="mhl-link" href="#about">About</a>
-            <a class="mhl-link" href="#factions">Factions</a>
-            <a class="mhl-link" href="#gameplay">gameplay</a>
-
-          </div>
-          <div class="mh-wrap mh-right">
-            <a class="mhl-link no-margin" href="#marketplace">marketplace</a>
-            <a class="mhl-link" href="#tokenomics">TOKENOMICS</a>
-            <a class="mhl-link" href="#roadmap">roadmap</a>
-          </div>
+    <div class="paralax-wrap">
+      <div id="paralax1">
+        <img src="images/para-atif.png" alt="" />
+      </div>
+      <div id="paralax2">
+        <img src="images/parallax-c-2.png" alt="" />
+      </div>
+      <div id="paralax3">
+        <img src="images/para-1.png" alt="" />
+      </div>
+      <div id="paralax4">
+        <img src="images/group-left.png" alt="" />
+      </div>
+      <div class="mollecttor" id="mollecttor">
+        <div class="m-contract">
+          <span
+            >Contract address:
+            <span id="contract"
+              >0x06597FFaFD82E66ECeD9209d539032571ABD50d9</span
+            ></span
+          >
+          <img
+            title="copy"
+            class="copy-contract"
+            src="/images/copycontract.png"
+            alt=""
+            onclick="copyToClipboard('#contract')"
+          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://pancakeswap.finance/swap?outputCurrency=0x06597FFaFD82E66ECeD9209d539032571ABD50d9"
+            >BUY MOL</a
+          >
         </div>
-      </header>
-      <header class="m-header-mobile">
-        <img src="images/menu.png" alt="">
-      </header>
+        <header class="m-header w-1440">
+          <div class="mh-">
+            <div class="mh-wrap">
+              <a
+                class="mfsi-icon mfsi-discord"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://discord.com/invite/QzBCXBxrcV"
+              >
+                <img src="images/stone-copy-2.png" alt="" />
+                <span class="mfsi-img"></span>
+              </a>
+              <a class="mhl-link" href="#about">About</a>
+              <a class="mhl-link" href="#factions">Factions</a>
+              <a class="mhl-link" href="#gameplay">gameplay</a>
+            </div>
+            <div class="mh-wrap mh-right">
+              <a class="mhl-link no-margin" href="#marketplace">marketplace</a>
+              <a class="mhl-link" href="#tokenomics">TOKENOMICS</a>
+              <a class="mhl-link" href="#roadmap">roadmap</a>
+            </div>
+          </div>
+        </header>
+        <header class="m-header-mobile">
+          <img src="images/menu.png" alt="" />
+        </header>
 
-      <!-- Explore and conquer -->
-      <div class="m-content" id="">
-        <div class="mc-title" id="mc-title">
-          <div class="mct-content-wrap w-1440">
-            <span class="mct-explore">Explore and conquer</span>
-            <span class="mct-the">the</span>
-            <span class="mct-ancient">Mollector</span>
-            <span class="mct-galaxy">World</span>
-            <span class="mct-next">The next generation of trading card game</span>
-            <div class="mct-news">
-              <div class="mctn-wrap">
-                <div class="mctnw-title">
-                  <div class="mctnwt-text">
-                    Upcoming event
-                  </div>  
-                </div>
-                <div class="mctnw-item-wrap">
-                  <div class="miw-item">
+        <!-- Explore and conquer -->
+        <div class="m-content" id="">
+          <div class="mc-title" id="mc-title">
+            <div class="mct-content-wrap w-1440">
+              <span class="mct-explore">Explore and conquer</span>
+              <span class="mct-the">the</span>
+              <span class="mct-ancient">Mollector</span>
+              <span class="mct-galaxy">World</span>
+              <span class="mct-next"
+                >The next generation of trading card game</span
+              >
+              <div class="mct-news">
+                <div class="mctn-wrap">
+                  <div class="mctnw-title">
+                    <div class="mctnwt-text">get ready for our new look!</div>
+                  </div>
+                  <div class="mctnw-item-wrap">
+                    <div class="get-new">
+                      Something awesome is coming your way in
+                    </div>
+                    <div class="clock">
+                      <div class="wrap-clock">
+                        <div class="hours" id="hours"></div>
+                        <span>hours</span>
+                      </div>
+                      <div class="wrap-clock">
+                        <div class="minutes" id="minutes"></div>
+                        <span>minutes</span>
+                      </div>
+                      <div class="wrap-clock">
+                        <div class="seconds" id="seconds"></div>
+                        <span>seconds</span>
+                      </div>
+                    </div>
+                    <!-- <div class="miw-item">
                     <div class="miwi-left">
                       <div class="miwil-up">29</div>
                       <div class="miwil-down">april</div>
@@ -123,8 +252,8 @@
                       <div class="miwic-down">Prepare to race for the top, Mollectors!</div>
                     </div>
                     <a target="_blank" rel="noopener noreferrer" href="https://pre-alpha.mollector.com/" class="miwi-right">PLAY NOW</a>
-                  </div>
-                  <div class="miw-item">
+                  </div> -->
+                    <!-- <div class="miw-item">
                     <div class="miwi-left">
                       <div class="miwil-up">22-24</div>
                       <div class="miwil-down">april</div>
@@ -138,8 +267,8 @@
                       <div class="miwic-down">The tallies are counted and the Champions are named. Pre-Alpha battleground will be temporarily closed for system updates and reopen on next week.</div>
                     </div>
                     <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/MollectorGame/status/1518532777402150912" class="miwi-right">WINNER LIST</a>
-                  </div>
-                  <!-- <div class="miw-item">
+                  </div> -->
+                    <!-- <div class="miw-item">
                     <div class="miwi-left">
                       <div class="miwil-up">22</div>
                       <div class="miwil-down">mar</div>
@@ -154,183 +283,261 @@
                     </div>
                     <a href="/mollector-review.html" class="miwi-right">watch now</a>
                   </div> -->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="mct-icon">
-              <div class="icon-wrapper">
-                <div class="mouse-icon">
-                  <div class="mouse"></div>
-                  <span class="arrow arrow-01"></span>
-                  <span class="arrow arrow-02"></span>
+              <div class="mct-icon">
+                <div class="icon-wrapper">
+                  <div class="mouse-icon">
+                    <div class="mouse"></div>
+                    <span class="arrow arrow-01"></span>
+                    <span class="arrow arrow-02"></span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <span class="mct-scroll-down">Scroll down to continue...</span>
-            <div class="mct-icon mct-icon-mobile">
-              <div class="icon-wrapper">
-                <div class="mouse-icon">
-                  <img src="images/swipe-hand.svg" alt="">
-                  <span class="arrow arrow-01"></span>
-                  <span class="arrow arrow-02"></span>
+              <span class="mct-scroll-down">Scroll down to continue...</span>
+              <div class="mct-icon mct-icon-mobile">
+                <div class="icon-wrapper">
+                  <div class="mouse-icon">
+                    <img src="images/swipe-hand.svg" alt="" />
+                    <span class="arrow arrow-01"></span>
+                    <span class="arrow arrow-02"></span>
+                  </div>
                 </div>
               </div>
+              <span class="mct-scroll-down mct-scroll-down-mobile"
+                >Swipe down to continue...</span
+              >
             </div>
-            <span class="mct-scroll-down mct-scroll-down-mobile">Swipe down to continue...</span>
-          </div>
-          <a class="mct-discord-mobile" target="_blank" rel="noopener noreferrer" href="https://discord.com/channels/899960577605120040/899960577605120042"
-            width="100%">
-            <img src="images/discord768.png" alt="">
-          </a>
-        </div>
-
-        <!-- magical world -->
-        <div class="mc-magical" id='mc-magical'>
-          <div class="mcm-content-wrap">
-            <div class="line-trigger"></div>
-            <div class="sp-container text-start" id="text-start">
-              <div class="sp-content">
-                <div class="sp-globe"></div>
-                <div class="frame-1 text-magical">In a galaxy,<br /> far and far away, on the edge of the universe...
-                </div><br /><br />
-                <div class="frame-2 text-magical">There is a magical world<br />
-                  where strange creatures and warriors
-                  from different races <br />and factions
-                  living and fighting together</div><br /><br />
-                <div class="frame-3 text-magical">And the ones who collect and own those warriors are known as... </div>
-                <div class="sp-circle-link text-magical-bottom text-magical">Mollector</div>
-              </div>
-            </div>
-            <a href="https://www.youtube.com/watch?v=74BnYKXXUJ8" target="_blank" rel="noopener noreferrer" class="mcmc-des"
-              id="headerVideoLink">
-              Watch Video
+            <a
+              class="mct-discord-mobile"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://discord.com/channels/899960577605120040/899960577605120042"
+              width="100%"
+            >
+              <img src="images/discord768.png" alt="" />
             </a>
           </div>
-        </div>
 
-        <!-- Welcome to -->
-        <div class="mc-ancient" id="about">
-          <div class="mca-content-wrap w-1440 pt-100">
-            <div class="mca-title">
-              <div class="mcat-welcome">Welcome to the</div>
-              <div class="mcat-ancient">Ancient Galaxy</div>
-            </div>
-            <div class="mca-des">
-              Where each player is a Mollector
-            </div>
-            <ul class="mca-wrap">
-              <li>Travelling across the Universe</li>
-              <li class="mcaw-img-2">Finding the rarest cards scattered around the galaxy</li>
-              <li class="mcaw-img-3">Summoning powerful warriors</li>
-              <li class="mcaw-img-4">Competing against others Mollectors</li>
-              <li class="mcaw-img-5">Joining forces to fight the World Boss</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- slide -->
-        <div class="mc-slider pt-100" id="factions">
-          <div class="paroller-left paroller-example"></div>
-          <div class="paroller-right mega my-element" data-paroller-factor="0.5" data-paroller-factor-lg="0.4"
-            data-paroller-factor-md="0.3" data-paroller-factor-sm="-0.2" data-paroller-factor-xs="-0.1"
-            data-paroller-type="foreground" data-paroller-direction="horizontal"
-            data-paroller-transition="transform .2s linear"></div>
-          <!-- Swiper -->
-          <div class="swiper swiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <span class="item item-1">
-                </span>
-
-                <div class="slide-item-title">The Dragon</div>
-                <div class="slide-item-des">The Dragons are the oldest Faction in the game. They are particularly arrogant and always hesitate to cooperate with other races. On the other hand, each Dragon warrior is exceptionally strong in magic powers that augment strength and defense.</div>
-              </div>
-              <div class="swiper-slide">
-                <span class="item item-2"></span>
-                <div class="slide-item-title">The Elemental</div>
-                <div class="slide-item-des">Originally created by the Dragon Witches to serve Dragon’s conquests. No longer bound to their old masters, they are now a magnificent kind with adept control of the elements. They can manipulate ice, fire and wind to devastating AoE and DoT effects.</div>
-              </div>
-              <div class="swiper-slide">
-                <span class="item item-3"></span>
-
-                <div class="slide-item-title">The Demon</div>
-                <div class="slide-item-des">A special Faction comprised of different races and life forms who pursue the Dark Powers. Using the Genesis Molecules for their own personal gains, they are able to alter realities, buffing their own strength or sabotaging their opponent’s abilities.</div>
-              </div>
-              <div class="swiper-slide">
-                <span class="item item-4"></span>
-
-                <div class="slide-item-title">The Mech</div>
-                <div class="slide-item-des">Created by the mysterious Ancients. Their original directives are lost in time but has risen to be one of the most powerful Faction in the game. Mech warriors are extremely adaptive with the ability to repurpose spare parts from fallen Mech allies.</div>
-              </div>
-              <div class="swiper-slide">
-                <span class="item item-5"></span>
-                <div class="slide-item-title">The Beast</div>
-                <div class="slide-item-des">The Beast, which was one of the most powerful races, is now only a minority
-                  group.
-                  They are strong teammates. They often complete quests together.
+          <!-- magical world -->
+          <div class="mc-magical" id="mc-magical">
+            <div class="mcm-content-wrap">
+              <div class="line-trigger"></div>
+              <div class="sp-container text-start" id="text-start">
+                <div class="sp-content">
+                  <div class="sp-globe"></div>
+                  <div class="frame-1 text-magical">
+                    In a galaxy,<br />
+                    far and far away, on the edge of the universe...
+                  </div>
+                  <br /><br />
+                  <div class="frame-2 text-magical">
+                    There is a magical world<br />
+                    where strange creatures and warriors from different races
+                    <br />and factions living and fighting together
+                  </div>
+                  <br /><br />
+                  <div class="frame-3 text-magical">
+                    And the ones who collect and own those warriors are known
+                    as...
+                  </div>
+                  <div class="sp-circle-link text-magical-bottom text-magical">
+                    Mollector
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <span class="item item-6"></span>
-                <div class="slide-item-title">THE LOST</div>
-                <div class="slide-item-des">Not being categorically recognized as a Faction, The Lost includes members of different races. They have their own distinct and unique characteristics and don’t follow any exclusive creed.
+              <a
+                href="https://www.youtube.com/watch?v=74BnYKXXUJ8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mcmc-des"
+                id="headerVideoLink"
+              >
+                Watch Video
+              </a>
+            </div>
+          </div>
+
+          <!-- Welcome to -->
+          <div class="mc-ancient" id="about">
+            <div class="mca-content-wrap w-1440 pt-100">
+              <div class="mca-title">
+                <div class="mcat-welcome">Welcome to the</div>
+                <div class="mcat-ancient">Ancient Galaxy</div>
+              </div>
+              <div class="mca-des">Where each player is a Mollector</div>
+              <ul class="mca-wrap">
+                <li>Travelling across the Universe</li>
+                <li class="mcaw-img-2">
+                  Finding the rarest cards scattered around the galaxy
+                </li>
+                <li class="mcaw-img-3">Summoning powerful warriors</li>
+                <li class="mcaw-img-4">Competing against others Mollectors</li>
+                <li class="mcaw-img-5">
+                  Joining forces to fight the World Boss
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- slide -->
+          <div class="mc-slider pt-100" id="factions">
+            <div class="paroller-left paroller-example"></div>
+            <div
+              class="paroller-right mega my-element"
+              data-paroller-factor="0.5"
+              data-paroller-factor-lg="0.4"
+              data-paroller-factor-md="0.3"
+              data-paroller-factor-sm="-0.2"
+              data-paroller-factor-xs="-0.1"
+              data-paroller-type="foreground"
+              data-paroller-direction="horizontal"
+              data-paroller-transition="transform .2s linear"
+            ></div>
+            <!-- Swiper -->
+            <div class="swiper swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <span class="item item-1"> </span>
+
+                  <div class="slide-item-title">The Dragon</div>
+                  <div class="slide-item-des">
+                    The Dragons are the oldest Faction in the game. They are
+                    particularly arrogant and always hesitate to cooperate with
+                    other races. On the other hand, each Dragon warrior is
+                    exceptionally strong in magic powers that augment strength
+                    and defense.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="item item-2"></span>
+                  <div class="slide-item-title">The Elemental</div>
+                  <div class="slide-item-des">
+                    Originally created by the Dragon Witches to serve Dragon’s
+                    conquests. No longer bound to their old masters, they are
+                    now a magnificent kind with adept control of the elements.
+                    They can manipulate ice, fire and wind to devastating AoE
+                    and DoT effects.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="item item-3"></span>
+
+                  <div class="slide-item-title">The Demon</div>
+                  <div class="slide-item-des">
+                    A special Faction comprised of different races and life
+                    forms who pursue the Dark Powers. Using the Genesis
+                    Molecules for their own personal gains, they are able to
+                    alter realities, buffing their own strength or sabotaging
+                    their opponent’s abilities.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="item item-4"></span>
+
+                  <div class="slide-item-title">The Mech</div>
+                  <div class="slide-item-des">
+                    Created by the mysterious Ancients. Their original
+                    directives are lost in time but has risen to be one of the
+                    most powerful Faction in the game. Mech warriors are
+                    extremely adaptive with the ability to repurpose spare parts
+                    from fallen Mech allies.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="item item-5"></span>
+                  <div class="slide-item-title">The Beast</div>
+                  <div class="slide-item-des">
+                    The Beast, which was one of the most powerful races, is now
+                    only a minority group. They are strong teammates. They often
+                    complete quests together.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <span class="item item-6"></span>
+                  <div class="slide-item-title">THE LOST</div>
+                  <div class="slide-item-des">
+                    Not being categorically recognized as a Faction, The Lost
+                    includes members of different races. They have their own
+                    distinct and unique characteristics and don’t follow any
+                    exclusive creed.
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination" id="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination" id="swiper-pagination"></div>
           </div>
-        </div>
 
-        <!-- gameplay -->
-        <div class="mc-gameplay" id="gameplay">
-          <div class="mcg-wrap w-1440">
-            <div class="mcg-title">
-              Gameplay
-            </div>
-            <div class="mcg-des">LOW ENTRY FEE, EASY TO GROW, HARD TO MASTER</div>
-            <div class="mcg-content">
-              Mollector is aiming to be <span>the next big game</span> <br>
-              with a unique gameplay experience, in which the card battle strategy is complex, competitive and addictive.
-            </div>
-            <div class="mcg-video">
-              <iframe class="video" width="740" height="380" src="https://www.youtube.com/embed/5jhfotiVNQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!-- <video controls class="video">
+          <!-- gameplay -->
+          <div class="mc-gameplay" id="gameplay">
+            <div class="mcg-wrap w-1440">
+              <div class="mcg-title">Gameplay</div>
+              <div class="mcg-des">
+                LOW ENTRY FEE, EASY TO GROW, HARD TO MASTER
+              </div>
+              <div class="mcg-content">
+                Mollector is aiming to be <span>the next big game</span> <br />
+                with a unique gameplay experience, in which the card battle
+                strategy is complex, competitive and addictive.
+              </div>
+              <div class="mcg-video">
+                <iframe
+                  class="video"
+                  width="740"
+                  height="380"
+                  src="https://www.youtube.com/embed/5jhfotiVNQw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <!-- <video controls class="video">
                 <source src="https://www.youtube.com/watch?v=NtDOxqqOf38&ab_channel=Mollector" type="video/mp4" />
               </video> -->
-              <!-- <div class="playpause"></div> -->
-            </div>
-            <div class="mcg-content mcg-content-footer">
-              <span>Mollector is not just another trading card game</span>. Being built specifically
-              <span>for Blockchain on Blockchain</span>, optimized for <span>Play to Earn, in-game DeFi & NFT mechanisms</span>, players will enjoy a brand new experience in gaming, personalizing and earning directly on Web3 with joy.
-            </div>
-          </div>
-        </div>
-
-        <!-- NFT MARKETPLACE -->
-        <div class="mc-nft pt-100" id="marketplace">
-          <div class="mcn-wrap">
-            <div class="wrap">
-              <div class="mcn-title">NFT MARKETPLACE</div>
-              <div class="mcn-des">Mollector is <span class="mcn-highlight">All in one NFT Gaming</span> <br>
-                Where players, creators, investors, collectors, holders and traders will enjoy and benefit from meaningful and profitable engagements with Blockchain 
-                <span class="mcn-highlight">transparency </span>and
-                <span class="mcn-highlight"> sustainability</span>.
+                <!-- <div class="playpause"></div> -->
               </div>
-              <div class="mcn-launch">Launching Soon</div>
+              <div class="mcg-content mcg-content-footer">
+                <span>Mollector is not just another trading card game</span>.
+                Being built specifically
+                <span>for Blockchain on Blockchain</span>, optimized for
+                <span>Play to Earn, in-game DeFi & NFT mechanisms</span>,
+                players will enjoy a brand new experience in gaming,
+                personalizing and earning directly on Web3 with joy.
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- MYSTERY CHEST -->
-        <div class="mc-mysterychest pt-100" id="tokenomics">
-          <div class="mcm-title">Tokenomics</div>
-          <!-- <div class="mcm-des">
+          <!-- NFT MARKETPLACE -->
+          <div class="mc-nft pt-100" id="marketplace">
+            <div class="mcn-wrap">
+              <div class="wrap">
+                <div class="mcn-title">NFT MARKETPLACE</div>
+                <div class="mcn-des">
+                  Mollector is
+                  <span class="mcn-highlight">All in one NFT Gaming</span>
+                  <br />
+                  Where players, creators, investors, collectors, holders and
+                  traders will enjoy and benefit from meaningful and profitable
+                  engagements with Blockchain
+                  <span class="mcn-highlight">transparency </span>and
+                  <span class="mcn-highlight"> sustainability</span>.
+                </div>
+                <div class="mcn-launch">Launching Soon</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MYSTERY CHEST -->
+          <div class="mc-mysterychest pt-100" id="tokenomics">
+            <div class="mcm-title">Tokenomics</div>
+            <!-- <div class="mcm-des">
             Opening the Mystery Chest, collecting Cards <br>
             <span>
               Being a Mollector
             </span>
           </div> -->
-          <!-- <div class="mcm-chest">
+            <!-- <div class="mcm-chest">
             <div class="mcmc-item mcmc-item-mobile">
               <img class="mcmci-img1" src="images/chest-1@2x.png" alt="">
               <img class="mcmci-img2" src="images/light-1-copy@2x.png" alt="">
@@ -344,323 +551,508 @@
               <img class="mcmci-img2" src="images/light-1-copy@2x.png" alt="">
             </div>
           </div> -->
-          <!-- <div class="mcm-textbottom">
+            <!-- <div class="mcm-textbottom">
             <span class="mcmt-title">Mystery CHEST</span>
             <span class="mcmt-des">Unlock Soon</span>
           </div> -->
-          <div class="mctw-tabs" id="mctw-tabs">
-            <span class="tablinktoken" onclick="openTokenomic('table', this)" id="defaultOpenTokenomic">table</span>
-            <span class="tablinktoken" onclick="openTokenomic('chart', this)">chart</span>
-          </div>
-          <div class="tokenomic-content">
-            <div id="table" class="tabcontenttoken">
-              <div class="tokenomic-wrap">
-                <div class="tokenomic-line tokenomic-line-1"></div>
-                <div class="tokenomic-line tokenomic-line-2"></div>
-                <div class="tokenomic-line tokenomic-line-3"></div>
-                <div class="tokenomic-line tokenomic-line-4"></div>
-                <div class="tokenomic-line tokenomic-line-5"></div>
-                <div class="tokenomic-line tokenomic-line-6"></div>
-                <div class="tokenomic-line tokenomic-line-7"></div>
-                <div class="tokenomic-line tokenomic-line-8"></div>
-                <div class="tw-item tokenomic-w-30">
-                  <div class="tokenomic-twi-item tokenomic-twi-title">item</div>
-                  <div class="tokenomic-twi-item">Public Sale</div>
-                  <div class="tokenomic-twi-item">Private Sale</div>
-                  <div class="tokenomic-twi-item">Team</div>
-                  <div class="tokenomic-twi-item">Advisor</div>
-                  <div class="tokenomic-twi-item">Marketing & Partnership</div>
-                  <div class="tokenomic-twi-item">Ecosystem development</div>
-                  <div class="tokenomic-twi-item">In-game operation Pool</div>
-                  <div class="tokenomic-twi-item">Total</div>
-                </div>
-                <div class="tw-item tokenomic-w-10">
-                  <div class="tokenomic-twi-item tokenomic-twi-title">%</div>
-                  <div class="tokenomic-twi-item">5% <span class="m-tooltip m-calendar" tooltip="25% at TGE and 25% per month over the next 3 months"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">10% <span class="m-tooltip m-calendar" tooltip="10% at TGE and linear vesting in 24 months with a 03-month cliff"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">20% <span class="m-tooltip m-calendar" tooltip="Linear vesting in 48 months with a 12-month cliff"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">5% <span class="m-tooltip m-calendar" tooltip="Linear vesting in 48 months with a 12-month cliff"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">25% <span class="m-tooltip m-calendar" tooltip="5% at TGE and linear vesting in 24 months with a 03-month cliff"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">25% <span class="m-tooltip m-calendar" tooltip="5% at TGE and linear monthly vesting in 24 months"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">10% <span class="m-tooltip m-calendar" tooltip="0% at TGE and stake 100% within 48 months"><img class="" src="/images/calendar.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">100%</div>
-                </div>
-                <div class="tw-item tokenomic-w-10">
-                  <div class="tokenomic-twi-item tokenomic-twi-title">Token</div>
-                  <div class="tokenomic-twi-item">50,000,000 <span class="m-tooltip m-calendar" tooltip="$0.015"><img class="m-question" src="/images/question.svg" alt=""></span></div>
-                  <div class="tokenomic-twi-item">100,000,000</div>
-                  <div class="tokenomic-twi-item">200,000,000</div>
-                  <div class="tokenomic-twi-item">50,000,000</div>
-                  <div class="tokenomic-twi-item">250,000,000</div>
-                  <div class="tokenomic-twi-item">250,000,000</div>
-                  <div class="tokenomic-twi-item">100,000,000</div>
-                  <div class="tokenomic-twi-item">1,000,000,000</div>
-                </div>
-                <div class="tw-item tokenomic-w-10 tokenomic-twi-hidden">
-                  <div class="tokenomic-twi-item tokenomic-twi-title ">Price</div>
-                  <div class="tokenomic-twi-item">$0,015</div>
-                  <div class="tokenomic-twi-item"></div>
-                  <div class="tokenomic-twi-item"></div>
-                  <div class="tokenomic-twi-item"></div>
-                  <div class="tokenomic-twi-item"></div>
-                  <div class="tokenomic-twi-item"></div>
-                  <div class="tokenomic-twi-item"></div>
-                  <div class="tokenomic-twi-item"></div>
-                </div>
-                <div class="tw-item tokenomic-w-35 tokenomic-twi-hidden">
-                  <div class="tokenomic-twi-item tokenomic-twi-title">Schedule</div>
-                  <div class="tokenomic-twi-item">25% at TGE and 25% per month over the next 3 months</div>
-                  <div class="tokenomic-twi-item">10% at TGE and linear vesting in 24 months with a 03-month cliff</div>
-                  <div class="tokenomic-twi-item">Linear vesting in 48 months with a 12-month cliff</div>
-                  <div class="tokenomic-twi-item">Linear vesting in 48 months with a 12-month cliff</div>
-                  <div class="tokenomic-twi-item">5% at TGE and linear vesting in 24 months with a 03-month cliff</div>
-                  <div class="tokenomic-twi-item">5% at TGE and linear monthly vesting in 24 months</div>
-                  <div class="tokenomic-twi-item">0% at TGE and stake 100% within 48 months</div>
-                  <div class="tokenomic-twi-item"></div>
-                </div>
-              </div>
-            </div>
-            <div id="chart" class="tabcontenttoken tabcontent-img">
-              <img src="/images/chart3x.png" alt="">
-            </div>
-          </div>
-        </div>
-
-        <!-- Mollector Roadmap -->
-        <div class="mc-roadmap pt-100" id="roadmap">
-          <div class="mcr-content-wrap w-1440">
-            <div class="mcr-title">Mollector Roadmap</div>
-            <div class="wrap-title">
-              <span class="twi-title twi-title-active">
-                <span class="twit-image">
-                  <div class="twiti-icon"></div>
-                </span> Q4 2021
-              </span>
-              <span class="twi-title twi-title-active"><span class="twit-image">
-                  <div class="twiti-icon twiti-icon-2"></div>
-                </span>Q1 2022</span>
-              <span class="twi-title"><span class="twit-image twit-image-2">
-                  <div class="twiti-icon twiti-icon-3"></div>
-                </span>Q2 2022</span>
-              <span class="twi-title"><span class="twit-image twit-image-2">
-                  <div class="twiti-icon twiti-icon-4"></div>
-                </span>Q3 2022</span>
-              <span class="twi-title twi-no-after"><span class="twit-image twit-image-2">
-                  <div class="twiti-icon twiti-icon-5"></div>
-                </span>Q4 2022</span>
-            </div>
-            <div class="grid-wrap">
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-              <div class="line line-4"></div>
-              <div class="line line-5"></div>
-              <!-- <div class="line line-6"></div> -->
-              <!-- <div class="line line-7"></div>
-              <div class="line line-8"></div> -->
-
-              <span class="twi-genesis gw-active">MVP</span>
-              <span class="gw-active">IDO/TGE</span>
-              <span>Genesis NFT Sale</span>
-              <span>Brawl mode</span>
-              <span>NFT Lending</span>
-
-              <span class="gw-active"></span>
-              <span class="gw-active">PvP mode</span>
-              <span>Alpha Test</span>
-              <span>Open Beta</span>
-              <span>PvE mode</span>
-
-              <span class="gw-active"></span>
-              <span class="gw-active"></span>
-              <span>Close Beta</span>
-              <span>Upgrade function</span>
-              <span></span>
-
-              <span></span>
-              <span class="gw-active"></span>
-              <span>Marketplace</span>
-              <span>World Boss</span>
-              <span></span>
-
-              <span></span>
-              <span class="gw-active"></span>
-              <span>$MOL Staking</span>
-              <span></span>
-              <span></span>
-
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div class="mcr-content-wrap-mobile">
-            <div class="mcr-title">Mollector Roadmap</div>
-            <div class="swiper-container slider2">
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-              <div class="line line-4"></div>
-              <div class="line line-5"></div>
-              <div class="line line-6"></div>
-              <!-- <div class="line line-7"></div>
-              <div class="line line-8"></div> -->
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <span class="year year-active"> Q4 2021</span>
-                  <span class="item1 item1-active">MVP</span>
-                  <span class="item1 "></span>
-                  <span class="item1 "></span>
-                </div>
-                <div class="swiper-slide">
-                  <span class="year year1 year-active year-bg"> Q1 2022</span>
-                  <span class="item1 item1-active">IDO/TGE</span>
-                  <span class="item1 item1-active">PvP mode</span>
-                  <span class="item1 item1-active"></span>
-                  <span class="item1 item1-active"></span>
-                  <span class="item1 item1-active"></span>
-                </div>
-                <div class="swiper-slide">
-                  <span class="year year2"> Q2 2022</span>
-                  <span class="item1">Genesis NFT Sale</span>
-                  <span class="item1">Alpha Test</span>
-                  <span class="item1">Close Beta</span>
-                  <span class="item1">Marketplace</span>
-                  <span class="item1">$MOL Staking</span>
-                  <!-- <span class="item1">Mainnet Launch</span> -->
-                  <span class="item1"></span>
-                </div>
-                <div class="swiper-slide">
-                  <span class="year year3"> Q3 2022</span>
-                  <!-- <span class="item1">Multi-chain support</span> -->
-                  <span class="item1">Brawl mode</span>
-                  <span class="item1">Open Beta</span>
-                  <span class="item1">Upgrade function</span>
-                  <span class="item1">World Boss</span>
-                  <span class="item1"></span>
-                </div>
-                <div class="swiper-slide">
-                  <span class="year year4"> Q4 2022</span>
-                  <span class="item1">NFT Lending</span>
-                  <span class="item1">PvE Mode</span>
-                  <span class="item1"></span>
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- team -->
-        <div class="mc-team">
-          <div class="mct-wrap">
-            <div class="mcr-title">The team</div>
-            <div class="mcm-des">
-              Mollector team and advisors Information
-            </div>
             <div class="mctw-tabs" id="mctw-tabs">
-              <span class="tablink" onclick="openPage('team', this)" id="defaultOpen">Team</span>
-              <span class="tablink" onclick="openPage('advisors', this)">Advisors</span>
+              <span
+                class="tablinktoken"
+                onclick="openTokenomic('table', this)"
+                id="defaultOpenTokenomic"
+                >table</span
+              >
+              <span class="tablinktoken" onclick="openTokenomic('chart', this)"
+                >chart</span
+              >
             </div>
-            <div class="mctw-content">
-              <div id="team" class="tabcontent">
-                <!-- Swiper -->
-                <div class="swiper swiperTeam">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/tung-tran-23678784/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/tungtran.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Tung Tran</div>
-                      <div class="mctwc-des">Co-founder. Game Producer</div>
-                      <div class="mctwc-content">15+ years as Game Operator Producer in the game industry</div>
+            <div class="tokenomic-content">
+              <div id="table" class="tabcontenttoken">
+                <div class="tokenomic-wrap">
+                  <div class="tokenomic-line tokenomic-line-1"></div>
+                  <div class="tokenomic-line tokenomic-line-2"></div>
+                  <div class="tokenomic-line tokenomic-line-3"></div>
+                  <div class="tokenomic-line tokenomic-line-4"></div>
+                  <div class="tokenomic-line tokenomic-line-5"></div>
+                  <div class="tokenomic-line tokenomic-line-6"></div>
+                  <div class="tokenomic-line tokenomic-line-7"></div>
+                  <div class="tokenomic-line tokenomic-line-8"></div>
+                  <div class="tw-item tokenomic-w-30">
+                    <div class="tokenomic-twi-item tokenomic-twi-title">
+                      item
                     </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/peter-quang-51a27721a/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/quangnguyen.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Quang Nguyen</div>
-                      <div class="mctwc-des">Co-founder. Product Manager</div>
-                      <div class="mctwc-content">17+ years in the gaming industry with 100+M total downloads</div>
+                    <div class="tokenomic-twi-item">Public Sale</div>
+                    <div class="tokenomic-twi-item">Private Sale</div>
+                    <div class="tokenomic-twi-item">Team</div>
+                    <div class="tokenomic-twi-item">Advisor</div>
+                    <div class="tokenomic-twi-item">
+                      Marketing & Partnership
                     </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/mwlite/in/markocampo11">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/mark.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Mark Ocampo</div>
-                      <div class="mctwc-des">Marketing Lead</div>
-                      <div class="mctwc-content">17+ years experience in International entertainment and Marketing
-                        industry</div>
+                    <div class="tokenomic-twi-item">Ecosystem development</div>
+                    <div class="tokenomic-twi-item">In-game operation Pool</div>
+                    <div class="tokenomic-twi-item">Total</div>
+                  </div>
+                  <div class="tw-item tokenomic-w-10">
+                    <div class="tokenomic-twi-item tokenomic-twi-title">%</div>
+                    <div class="tokenomic-twi-item">
+                      5%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="25% at TGE and 25% per month over the next 3 months"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
                     </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/nhat-nguyen-71787176/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/NhatAvatar2.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Nhat Nguyen</div>
-                      <div class="mctwc-des">Content & Community Coordinator</div>
-                      <div class="mctwc-content">10+ years in Communication and Media productions</div>
+                    <div class="tokenomic-twi-item">
+                      10%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="10% at TGE and linear vesting in 24 months with a 03-month cliff"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
                     </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/winkyzero/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/cuong2.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Cuong Nguyen</div>
-                      <div class="mctwc-des">Unity Developer Lead</div>
-                      <div class="mctwc-content">9+ years in game development</div>
+                    <div class="tokenomic-twi-item">
+                      20%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="Linear vesting in 48 months with a 12-month cliff"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
                     </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer" href="https://www.behance.net/Hanhdung">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/dung.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Dung Ho</div>
-                      <div class="mctwc-des">Art Lead</div>
-                      <div class="mctwc-content">New York Times Best-selling illustrator</div>
+                    <div class="tokenomic-twi-item">
+                      5%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="Linear vesting in 48 months with a 12-month cliff"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
                     </div>
-                    <!-- <div class="swiper-slide">
+                    <div class="tokenomic-twi-item">
+                      25%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="5% at TGE and linear vesting in 24 months with a 03-month cliff"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      25%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="5% at TGE and linear monthly vesting in 24 months"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      10%
+                      <span
+                        class="m-tooltip m-calendar"
+                        tooltip="0% at TGE and stake 100% within 48 months"
+                        ><img class="" src="/images/calendar.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="tokenomic-twi-item">100%</div>
+                  </div>
+                  <div class="tw-item tokenomic-w-10">
+                    <div class="tokenomic-twi-item tokenomic-twi-title">
+                      Token
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      50,000,000
+                      <span class="m-tooltip m-calendar" tooltip="$0.015"
+                        ><img
+                          class="m-question"
+                          src="/images/question.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <div class="tokenomic-twi-item">100,000,000</div>
+                    <div class="tokenomic-twi-item">200,000,000</div>
+                    <div class="tokenomic-twi-item">50,000,000</div>
+                    <div class="tokenomic-twi-item">250,000,000</div>
+                    <div class="tokenomic-twi-item">250,000,000</div>
+                    <div class="tokenomic-twi-item">100,000,000</div>
+                    <div class="tokenomic-twi-item">1,000,000,000</div>
+                  </div>
+                  <div class="tw-item tokenomic-w-10 tokenomic-twi-hidden">
+                    <div class="tokenomic-twi-item tokenomic-twi-title">
+                      Price
+                    </div>
+                    <div class="tokenomic-twi-item">$0,015</div>
+                    <div class="tokenomic-twi-item"></div>
+                    <div class="tokenomic-twi-item"></div>
+                    <div class="tokenomic-twi-item"></div>
+                    <div class="tokenomic-twi-item"></div>
+                    <div class="tokenomic-twi-item"></div>
+                    <div class="tokenomic-twi-item"></div>
+                    <div class="tokenomic-twi-item"></div>
+                  </div>
+                  <div class="tw-item tokenomic-w-35 tokenomic-twi-hidden">
+                    <div class="tokenomic-twi-item tokenomic-twi-title">
+                      Schedule
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      25% at TGE and 25% per month over the next 3 months
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      10% at TGE and linear vesting in 24 months with a 03-month
+                      cliff
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      Linear vesting in 48 months with a 12-month cliff
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      Linear vesting in 48 months with a 12-month cliff
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      5% at TGE and linear vesting in 24 months with a 03-month
+                      cliff
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      5% at TGE and linear monthly vesting in 24 months
+                    </div>
+                    <div class="tokenomic-twi-item">
+                      0% at TGE and stake 100% within 48 months
+                    </div>
+                    <div class="tokenomic-twi-item"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="chart" class="tabcontenttoken tabcontent-img">
+                <img src="/images/chart3x.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Mollector Roadmap -->
+          <div class="mc-roadmap pt-100" id="roadmap">
+            <div class="mcr-content-wrap w-1440">
+              <div class="mcr-title">Mollector Roadmap</div>
+              <div class="wrap-title">
+                <span class="twi-title twi-title-active">
+                  <span class="twit-image">
+                    <div class="twiti-icon"></div>
+                  </span>
+                  Q4 2021
+                </span>
+                <span class="twi-title twi-title-active"
+                  ><span class="twit-image">
+                    <div class="twiti-icon twiti-icon-2"></div> </span
+                  >Q1 2022</span
+                >
+                <span class="twi-title"
+                  ><span class="twit-image twit-image-2">
+                    <div class="twiti-icon twiti-icon-3"></div> </span
+                  >Q2 2022</span
+                >
+                <span class="twi-title"
+                  ><span class="twit-image twit-image-2">
+                    <div class="twiti-icon twiti-icon-4"></div> </span
+                  >Q3 2022</span
+                >
+                <span class="twi-title twi-no-after"
+                  ><span class="twit-image twit-image-2">
+                    <div class="twiti-icon twiti-icon-5"></div> </span
+                  >Q4 2022</span
+                >
+              </div>
+              <div class="grid-wrap">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+                <div class="line line-5"></div>
+                <!-- <div class="line line-6"></div> -->
+                <!-- <div class="line line-7"></div>
+              <div class="line line-8"></div> -->
+
+                <span class="twi-genesis gw-active">MVP</span>
+                <span class="gw-active">IDO/TGE</span>
+                <span>Genesis NFT Sale</span>
+                <span>Brawl mode</span>
+                <span>NFT Lending</span>
+
+                <span class="gw-active"></span>
+                <span class="gw-active">PvP mode</span>
+                <span>Alpha Test</span>
+                <span>Open Beta</span>
+                <span>PvE mode</span>
+
+                <span class="gw-active"></span>
+                <span class="gw-active"></span>
+                <span>Close Beta</span>
+                <span>Upgrade function</span>
+                <span></span>
+
+                <span></span>
+                <span class="gw-active"></span>
+                <span>Marketplace</span>
+                <span>World Boss</span>
+                <span></span>
+
+                <span></span>
+                <span class="gw-active"></span>
+                <span>$MOL Staking</span>
+                <span></span>
+                <span></span>
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="mcr-content-wrap-mobile">
+              <div class="mcr-title">Mollector Roadmap</div>
+              <div class="swiper-container slider2">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <div class="line line-4"></div>
+                <div class="line line-5"></div>
+                <div class="line line-6"></div>
+                <!-- <div class="line line-7"></div>
+              <div class="line line-8"></div> -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <span class="year year-active"> Q4 2021</span>
+                    <span class="item1 item1-active">MVP</span>
+                    <span class="item1"></span>
+                    <span class="item1"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="year year1 year-active year-bg"> Q1 2022</span>
+                    <span class="item1 item1-active">IDO/TGE</span>
+                    <span class="item1 item1-active">PvP mode</span>
+                    <span class="item1 item1-active"></span>
+                    <span class="item1 item1-active"></span>
+                    <span class="item1 item1-active"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="year year2"> Q2 2022</span>
+                    <span class="item1">Genesis NFT Sale</span>
+                    <span class="item1">Alpha Test</span>
+                    <span class="item1">Close Beta</span>
+                    <span class="item1">Marketplace</span>
+                    <span class="item1">$MOL Staking</span>
+                    <!-- <span class="item1">Mainnet Launch</span> -->
+                    <span class="item1"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="year year3"> Q3 2022</span>
+                    <!-- <span class="item1">Multi-chain support</span> -->
+                    <span class="item1">Brawl mode</span>
+                    <span class="item1">Open Beta</span>
+                    <span class="item1">Upgrade function</span>
+                    <span class="item1">World Boss</span>
+                    <span class="item1"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="year year4"> Q4 2022</span>
+                    <span class="item1">NFT Lending</span>
+                    <span class="item1">PvE Mode</span>
+                    <span class="item1"></span>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- team -->
+          <div class="mc-team">
+            <div class="mct-wrap">
+              <div class="mcr-title">The team</div>
+              <div class="mcm-des">Mollector team and advisors Information</div>
+              <div class="mctw-tabs" id="mctw-tabs">
+                <span
+                  class="tablink"
+                  onclick="openPage('team', this)"
+                  id="defaultOpen"
+                  >Team</span
+                >
+                <span class="tablink" onclick="openPage('advisors', this)"
+                  >Advisors</span
+                >
+              </div>
+              <div class="mctw-content">
+                <div id="team" class="tabcontent">
+                  <!-- Swiper -->
+                  <div class="swiper swiperTeam">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/tung-tran-23678784/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/tungtran.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Tung Tran</div>
+                        <div class="mctwc-des">Co-founder. Game Producer</div>
+                        <div class="mctwc-content">
+                          15+ years as Game Operator Producer in the game
+                          industry
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/peter-quang-51a27721a/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/quangnguyen.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Quang Nguyen</div>
+                        <div class="mctwc-des">Co-founder. Product Manager</div>
+                        <div class="mctwc-content">
+                          17+ years in the gaming industry with 100+M total
+                          downloads
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/mwlite/in/markocampo11"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img class="mctwc-ava" src="images/mark.jpg" alt="" />
+                        </a>
+                        <div class="mctwc-title">Mark Ocampo</div>
+                        <div class="mctwc-des">Marketing Lead</div>
+                        <div class="mctwc-content">
+                          17+ years experience in International entertainment
+                          and Marketing industry
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/nhat-nguyen-71787176/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/NhatAvatar2.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Nhat Nguyen</div>
+                        <div class="mctwc-des">
+                          Content & Community Coordinator
+                        </div>
+                        <div class="mctwc-content">
+                          10+ years in Communication and Media productions
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/winkyzero/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/cuong2.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Cuong Nguyen</div>
+                        <div class="mctwc-des">Unity Developer Lead</div>
+                        <div class="mctwc-content">
+                          9+ years in game development
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.behance.net/Hanhdung"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img class="mctwc-ava" src="images/dung.jpg" alt="" />
+                        </a>
+                        <div class="mctwc-title">Dung Ho</div>
+                        <div class="mctwc-des">Art Lead</div>
+                        <div class="mctwc-content">
+                          New York Times Best-selling illustrator
+                        </div>
+                      </div>
+                      <!-- <div class="swiper-slide">
                       <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
                         href="https://www.linkedin.com/in/adriannguyen2311/">
                         <img class="mctwc-bg" src="images/team.svg" alt="">
@@ -673,200 +1065,344 @@
                       <div class="mctwc-content">3+ years in blockchain marketing, specialize in community management
                         and social media</div>
                     </div> -->
+                    </div>
+                    <div class="pagination"></div>
                   </div>
-                  <div class="pagination "></div>
+                </div>
+                <div id="advisors" class="tabcontent">
+                  <!-- Swiper -->
+                  <div class="swiper swiperTeam">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/nguyen-thanh-binh-881181122/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/binhnguyen1.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Binh Nguyen</div>
+                        <div class="mctwc-des">Game Business Advisor</div>
+                        <div class="mctwc-content">
+                          Co-Founder of VNG & Metaxiz Game Business Advisor
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/longvuong22/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/longvuong.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Long Vuong</div>
+                        <div class="mctwc-des">Strategic Advisor</div>
+                        <div class="mctwc-content">
+                          Founder and CEO at TomoChain Lab
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/nang-nguyen-the-019988a6/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/nangnguyen.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Nang Nguyen</div>
+                        <div class="mctwc-des">Strategic Advisor</div>
+                        <div class="mctwc-content">
+                          Product Manager of TomoChain. Head Of Operation of
+                          LuaVentures
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/tung-hoang-719b4657/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/tunghoang.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Tung Hoang</div>
+                        <div class="mctwc-des">
+                          Blockchain Technical Advisor
+                        </div>
+                        <div class="mctwc-content">
+                          Co-founder & Product Manager of Tomochain Lab
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <a
+                          class="mctwc-avatar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://www.linkedin.com/in/ho%C3%A0ng-h%C3%A0-b30259ba/"
+                        >
+                          <img class="mctwc-bg" src="images/team.svg" alt="" />
+                          <img class="mctwc-in" src="images/in.svg" alt="" />
+                          <img
+                            class="mctwc-icon"
+                            src="images/linkedin-3.svg"
+                            alt=""
+                          />
+                          <img
+                            class="mctwc-ava"
+                            src="images/hahoangh.jpg"
+                            alt=""
+                          />
+                        </a>
+                        <div class="mctwc-title">Ha Hoang</div>
+                        <div class="mctwc-des">Tokenomics advisor</div>
+                        <div class="mctwc-content">
+                          5+ years in crypto community and business development
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination"></div>
+                  </div>
                 </div>
               </div>
-              <div id="advisors" class="tabcontent">
-                <!-- Swiper -->
-                <div class="swiper swiperTeam">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/nguyen-thanh-binh-881181122/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/binhnguyen1.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Binh Nguyen</div>
-                      <div class="mctwc-des">Game Business Advisor</div>
-                      <div class="mctwc-content">Co-Founder of VNG & Metaxiz Game Business Advisor</div>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/longvuong22/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/longvuong.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Long Vuong</div>
-                      <div class="mctwc-des">Strategic Advisor</div>
-                      <div class="mctwc-content">Founder and CEO at TomoChain Lab</div>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/nang-nguyen-the-019988a6/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/nangnguyen.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Nang Nguyen</div>
-                      <div class="mctwc-des">Strategic Advisor</div>
-                      <div class="mctwc-content">Product Manager of TomoChain.
-                        Head Of Operation of LuaVentures</div>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/tung-hoang-719b4657/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/tunghoang.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Tung Hoang</div>
-                      <div class="mctwc-des">Blockchain Technical Advisor</div>
-                      <div class="mctwc-content">Co-founder & Product Manager of Tomochain Lab</div>
-                    </div>
-                    <div class="swiper-slide">
-                      <a class="mctwc-avatar" target="_blank" rel="noopener noreferrer"
-                        href="https://www.linkedin.com/in/ho%C3%A0ng-h%C3%A0-b30259ba/">
-                        <img class="mctwc-bg" src="images/team.svg" alt="">
-                        <img class="mctwc-in" src="images/in.svg" alt="">
-                        <img class="mctwc-icon" src="images/linkedin-3.svg" alt="">
-                        <img class="mctwc-ava" src="images/hahoangh.jpg" alt="">
-                      </a>
-                      <div class="mctwc-title">Ha Hoang</div>
-                      <div class="mctwc-des">Tokenomics advisor</div>
-                      <div class="mctwc-content">5+ years in crypto community and business development</div>
-                    </div>
-                  </div>
-                  <div class="pagination "></div>
+            </div>
+            <div class="mct-whale"></div>
+          </div>
+
+          <!-- studio -->
+          <div class="mc-studio pt-100" id="mc-studio">
+            <div class="mcs-wrap">
+              <div class="mct-title">
+                <img class="mctt-title1" src="images/3-asset-2.png" alt="" />
+                <img class="mctt-title2" src="images/studio.png" alt="" />
+              </div>
+              <div class="mcs-content">
+                Mollector Studio “summons" talents from all walks of life. We
+                are game designers, developers, entrepreneurs, storytellers,
+                Visual artists, illustrators,...with decades of passion,
+                professional work and experience in various fields. <br />
+                Our founding team has 5 to 15 years of experience in making
+                mobile games, blockchain games. Those are “Lâu đài số”, “Cu Tí
+                bắn chim” - top 1 game weekly ranking on Apple App Store for
+                iPad; Frozen Santa - top 3 game season ranking on Google Play
+                Store. We also are creators of blockchain games on TomoChain,
+                Polygon Network and Binance Smart Chain such as Number Hunt,
+                Bug's maze, Dice, Golden slots. <br />
+                That's why we know how to take the best of both the traditional
+                gaming world and the blockchain gaming world to create our own
+                metaverse. We are all collectors and being collected, gathering
+                under a roof to fulfil one mission: Making a metaverse
+                adventure. Walking with us on this exciting journey are the big
+                names in Blockchain and Art.
+              </div>
+            </div>
+            <div class="partners-wrap">
+              <div class="pw-title">Partners & investors</div>
+              <div class="pw-sub-title">
+                Want to become partner or investor? Please email to
+                hello@mollector.com
+              </div>
+              <div class="pw-item-wrap">
+                <div class="pwiw-item">
+                  <img src="/images/LuaVenture-partner.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/TomoChain-partner.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/dao-launch-partner.png" alt="" />
+                </div>
+                <div class="pwiw-item pwiw-item-crvn">
+                  <img src="/images/crvn-partner.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/fam-logo.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/Logo-Byte.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/LuaStarter-white.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/Matic-white.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/BSCS.png" alt="" />
+                </div>
+                <div class="pwiw-item">
+                  <img src="/images/KDG.png" alt="" />
+                </div>
+                <div class="pwiw-item pwiw-item-neko">
+                  <img src="/images/Neko.png" alt="" />
+                </div>
+                <div class="pwiw-item pwiw-item-kdg">
+                  <img src="/images/kdgventure.png" alt="" />
                 </div>
               </div>
             </div>
+            <img
+              class="fire-atend"
+              data-paroller-factor="-0.2"
+              data-paroller-type="foreground"
+              data-paroller-direction="vertical"
+              src="images/fire-atend.png"
+              alt=""
+            />
           </div>
-          <div class="mct-whale"></div>
         </div>
 
-        <!-- studio -->
-        <div class="mc-studio pt-100" id="mc-studio">
-          <div class="mcs-wrap">
-            <div class="mct-title">
-              <img class="mctt-title1" src="images/3-asset-2.png" alt="">
-              <img class="mctt-title2" src="images/studio.png" alt="">
-            </div>
-            <div class="mcs-content">
-              Mollector Studio “summons" talents from all walks of life. We are game designers, developers,
-              entrepreneurs,
-              storytellers, Visual artists, illustrators,...with decades of passion, professional work and experience in
-              various fields. <br>
-              Our founding team has 5 to 15 years of experience in making mobile games, blockchain games. Those are “Lâu
-              đài
-              số”, “Cu Tí bắn chim” - top 1 game weekly ranking on Apple App Store for iPad; Frozen Santa - top 3 game
-              season ranking on Google Play Store. We also are creators of blockchain games on TomoChain, Polygon
-              Network
-              and Binance Smart Chain such as Number Hunt, Bug's maze, Dice, Golden slots. <br>
-              That's why we know how to take the best of both the traditional gaming world and the blockchain gaming world to
-              create
-              our own metaverse. We are all collectors and being collected, gathering under a roof to fulfil one
-              mission:
-              Making a metaverse adventure. Walking with us on this exciting journey are the big names in Blockchain and
-              Art.
-            </div>
-          </div>
-          <div class="partners-wrap">
-            <div class="pw-title">Partners & investors</div>
-            <div class="pw-sub-title">Want to become partner or investor? Please email to hello@mollector.com</div>
-            <div class="pw-item-wrap">
-              <div class="pwiw-item"><img src="/images/LuaVenture-partner.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/TomoChain-partner.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/dao-launch-partner.png" alt=""></div>
-              <div class="pwiw-item pwiw-item-crvn"><img src="/images/crvn-partner.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/fam-logo.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/Logo-Byte.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/LuaStarter-white.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/Matic-white.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/BSCS.png" alt=""></div>
-              <div class="pwiw-item"><img src="/images/KDG.png" alt=""></div>
-              <div class="pwiw-item pwiw-item-neko"><img src="/images/Neko.png" alt=""></div>
-              <div class="pwiw-item pwiw-item-kdg"><img src="/images/kdgventure.png" alt=""></div>
-            </div>
-          </div>
-          <img class="fire-atend" data-paroller-factor="-0.2" data-paroller-type="foreground"
-            data-paroller-direction="vertical" src="images/fire-atend.png" alt="">
-        </div>
-      </div>
-
-      <!-- footer -->
-      <footer class="m-footer" id="">
-        <div class="mf-wrap-footer">
-          <div class="mf-social">
-            <!-- <a class="mfs-logo" href="">
+        <!-- footer -->
+        <footer class="m-footer" id="">
+          <div class="mf-wrap-footer">
+            <div class="mf-social">
+              <!-- <a class="mfs-logo" href="">
               <img src="images/menu.png" alt="">
             </a> -->
-            <a class="mfs-logo mfs-logo-mobile" href="">
-              <img src="images/icon-2.png" alt="">
-            </a>
-            <div class="mfs-icon">
-              <a class="mfsi-icon mfsi-discord"
-                target="_blank" rel="noopener noreferrer"
-                href="https://discord.com/invite/QzBCXBxrcV">
-                <img src="images/stone-copy-2.png" alt="">
-                <span class="mfsi-img"></span>
+              <a class="mfs-logo mfs-logo-mobile" href="">
+                <img src="images/icon-2.png" alt="" />
               </a>
-              <a class="mfsi-icon mfsi-facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/MollectorGame">
-                <img src="images/stone-copy-2.png" alt="">
-                <span class="mfsi-img"></span>
-              </a>
-              <a class="mfsi-icon mfsi-twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/MollectorGame">
-                <img src="images/stone-copy-2.png" alt="">
-                <span class="mfsi-img"></span>
-              </a>
-              <a class="mfsi-icon mfsi-tele" target="_blank" rel="noopener noreferrer" href="https://t.me/MollectorGame">
-                <img src="images/stone-copy-2.png" alt="">
-                <span class="mfsi-img"></span>
-              </a>
-              <a class="mfsi-icon mfsi-youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCGmUwwKR7SnTGxcOO1nDnaA">
-                <img src="images/stone-copy-2.png" alt="">
-                <span class="mfsi-img"></span>
-              </a>
-            </div>
-            <div class="mfs-text">
-              ©2021 Mollector Studio <br>
-              All trademarks referenced herein are the properties of their respective owners.
-            </div>
-          </div>
-          <div class="mf-findout">
-            <span class='mf-title'>Find out more</span>
-            <ul>
-              <li><a target="_blank" rel="noopener noreferrer" href="http://docs.mollector.com">Whitepaper</a></li>
-              <!-- <li><a href="">Whitepaper</a></li> -->
-              <li><a href="https://docsend.com/view/2n48j6p6xehdhbk9" target="_blank" rel="noopener noreferrer">Pitch Deck</a></li>
-            </ul>
-          </div>
-          <div class="mf-wrap">
-            <div class="mfw-app">
-              <span class='mf-title'>Available soon on</span>
-              <a href="" class="mfwa-html">
-                <img src="images/5352-html-5-102567@2x.png" alt="">
-              </a>
-              <a href="" class="mfwa-html">
-                <img src="images/app-store-png-logo-33128@2x.png" alt="">
-              </a>
-              <a href="" class="mfwa-html">
-                <img src="images/google-play-png-logo-3781@2x.png" alt="">
-              </a>
-            </div>
-            <div class="mfw-signup">
-              <span class='mf-title'>Sign up for newsletter</span>
-              <div class="mfws-mail">
-                <input type="email" placeholder="your email here">
+              <div class="mfs-icon">
+                <a
+                  class="mfsi-icon mfsi-discord"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://discord.com/invite/QzBCXBxrcV"
+                >
+                  <img src="images/stone-copy-2.png" alt="" />
+                  <span class="mfsi-img"></span>
+                </a>
+                <a
+                  class="mfsi-icon mfsi-facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/MollectorGame"
+                >
+                  <img src="images/stone-copy-2.png" alt="" />
+                  <span class="mfsi-img"></span>
+                </a>
+                <a
+                  class="mfsi-icon mfsi-twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/MollectorGame"
+                >
+                  <img src="images/stone-copy-2.png" alt="" />
+                  <span class="mfsi-img"></span>
+                </a>
+                <a
+                  class="mfsi-icon mfsi-tele"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://t.me/MollectorGame"
+                >
+                  <img src="images/stone-copy-2.png" alt="" />
+                  <span class="mfsi-img"></span>
+                </a>
+                <a
+                  class="mfsi-icon mfsi-youtube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.youtube.com/channel/UCGmUwwKR7SnTGxcOO1nDnaA"
+                >
+                  <img src="images/stone-copy-2.png" alt="" />
+                  <span class="mfsi-img"></span>
+                </a>
+              </div>
+              <div class="mfs-text">
+                ©2021 Mollector Studio <br />
+                All trademarks referenced herein are the properties of their
+                respective owners.
               </div>
             </div>
-            <!-- <div class="mfw-company">
+            <div class="mf-findout">
+              <span class="mf-title">Find out more</span>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://docs.mollector.com"
+                    >Whitepaper</a
+                  >
+                </li>
+                <!-- <li><a href="">Whitepaper</a></li> -->
+                <li>
+                  <a
+                    href="https://docsend.com/view/2n48j6p6xehdhbk9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Pitch Deck</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mf-wrap">
+              <div class="mfw-app">
+                <span class="mf-title">Available soon on</span>
+                <a href="" class="mfwa-html">
+                  <img src="images/5352-html-5-102567@2x.png" alt="" />
+                </a>
+                <a href="" class="mfwa-html">
+                  <img src="images/app-store-png-logo-33128@2x.png" alt="" />
+                </a>
+                <a href="" class="mfwa-html">
+                  <img src="images/google-play-png-logo-3781@2x.png" alt="" />
+                </a>
+              </div>
+              <div class="mfw-signup">
+                <span class="mf-title">Sign up for newsletter</span>
+                <div class="mfws-mail">
+                  <input type="email" placeholder="your email here" />
+                </div>
+              </div>
+              <!-- <div class="mfw-company">
               <a target="_blank" rel="noopener noreferrer" href="https://tomochain.com/">
                 <img class="mfwc-tomo" src="images/tomochain-seeklogo.png" alt="">
               </a>
@@ -874,16 +1410,30 @@
                 <img class="mfwc-cloud" src="images/logo-ava-fb@2x.png" alt="">
               </a>
             </div> -->
-          </div>
-          <div class="mf-findout mf-findout-mobile">
-            <span class="mf-title">Find out more</span>
-            <ul>
-              <li><a target="_blank" rel="noopener noreferrer" href="http://docs.mollector.com">Whitepaper</a></li>
-              <!-- <li><a href="">Whitepaper</a></li> -->
-              <li><a href="https://docsend.com/view/2n48j6p6xehdhbk9" target="_blank" rel="noopener noreferrer">Pitch Deck</a></li>
-            </ul>
-          </div>
-          <!-- <div class="mfw-company mfw-company-mobile">
+            </div>
+            <div class="mf-findout mf-findout-mobile">
+              <span class="mf-title">Find out more</span>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://docs.mollector.com"
+                    >Whitepaper</a
+                  >
+                </li>
+                <!-- <li><a href="">Whitepaper</a></li> -->
+                <li>
+                  <a
+                    href="https://docsend.com/view/2n48j6p6xehdhbk9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Pitch Deck</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="mfw-company mfw-company-mobile">
             <a href="https://tomochain.com/" target="_blank" rel="noopener noreferrer">
               <img class="mfwc-tomo" src="images/tomochain-seeklogo.png" alt="">
             </a>
@@ -891,130 +1441,173 @@
               <img class="mfwc-cloud" src="images/logo-ava-fb@2x.png" alt="">
             </a>
           </div> -->
-          <div class="footer-text-bottom">
-            ©2021 Mollector Studio <br>
-            All trademarks referenced herein are the properties of their respective owners.
+            <div class="footer-text-bottom">
+              ©2021 Mollector Studio <br />
+              All trademarks referenced herein are the properties of their
+              respective owners.
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
-  </div>
-  <!-- <div class="scrollElement"></div> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- paroller JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"
-    integrity="sha512-jYedLgTWxBXtDBdGhnUgCgbgQ5j450R2LhxXk1G+pBcbaARaEC/qsrIhOtqAAiY7UBylc6bVGH6EFR10RNBXuQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
-    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <!-- <div class="scrollElement"></div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- paroller JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js"
+      integrity="sha512-jYedLgTWxBXtDBdGhnUgCgbgQ5j450R2LhxXk1G+pBcbaARaEC/qsrIhOtqAAiY7UBylc6bVGH6EFR10RNBXuQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-  <script src="js/index.js"></script>
-  <script>
+    <script src="js/index.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $("#loading").hide();
+      });
 
-    $(window).on('load', function () {
-      $('#loading').hide();
-    })
+      gsap.registerPlugin(ScrollTrigger);
+      let speed = 100;
 
+      /* item motion Animation  */
+      let item = gsap.timeline();
+      ScrollTrigger.create({
+        animation: item,
+        trigger: ".scrollElement",
+        start: "top top",
+        end: "45% 100%",
+        scrub: 2,
+      });
+      //item motion
+      item.to("#paralax1", { x: 0, y: -980 }, 0);
+      item.to("#paralax2", { x: 0, y: 250 }, 0);
+      item.to("#paralax3", { x: 0, y: 200 }, 0);
+      item.to("#paralax4", { x: 0, y: -600 }, 0);
+      // item.to("#paralax5", { x: 0, y: 200 }, 0);
 
-    gsap.registerPlugin(ScrollTrigger);
-    let speed = 100;
+      //paroller
+      $(".paroller-example").paroller({
+        factorXs: 0.1,
+        factorSm: 0.1,
+        factorMd: -0.4,
+        factorLg: -0.5,
+        factorXl: -0.6,
+        factor: -0.4,
+        type: "foreground",
+        direction: "horizontal",
+      });
+      $(".my-element").paroller();
+      $(".mct-title").paroller();
+      $(".fire-atend").paroller();
 
-    /* item motion Animation  */
-    let item = gsap.timeline();
-    ScrollTrigger.create({
-      animation: item,
-      trigger: ".scrollElement",
-      start: "top top",
-      end: "45% 100%",
-      scrub: 2,
-    });
-    //item motion 
-    item.to("#paralax1", { x: 0, y: -980 }, 0)
-    item.to("#paralax2", { x: 0, y: 250 }, 0)
-    item.to("#paralax3", { x: 0, y: 200 }, 0)
-    item.to("#paralax4", { x: 0, y: -600 }, 0);
-    // item.to("#paralax5", { x: 0, y: 200 }, 0);
-
-    //paroller 
-    $('.paroller-example').paroller({
-      factorXs: 0.1,
-      factorSm: 0.1,
-      factorMd: -0.4,
-      factorLg: -0.5,
-      factorXl: -0.6,
-      factor: -0.4,
-      type: 'foreground',
-      direction: 'horizontal'
-    });
-    $('.my-element').paroller();
-    $('.mct-title').paroller();
-    $('.fire-atend').paroller();
-
-    function onceLoaded() {
-      // this callback function could be a script from any other file etc
-      //console.log("onceLoaded fired");
-      var mainContent = document.getElementById("mollecttor");
-      mainContent.style.opacity = 1;
-      mainContent.style.visibility = "visible";
-    }
-
-    imageBgPreload(onceLoaded);
-
-    function openPage(pageName, elmnt) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+      function onceLoaded() {
+        // this callback function could be a script from any other file etc
+        //console.log("onceLoaded fired");
+        var mainContent = document.getElementById("mollecttor");
+        mainContent.style.opacity = 1;
+        mainContent.style.visibility = "visible";
       }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundImage = "";
-        tablinks[i].classList.remove('tablink-active');
+
+      imageBgPreload(onceLoaded);
+
+      function openPage(pageName, elmnt) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundImage = "";
+          tablinks[i].classList.remove("tablink-active");
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundImage =
+          "linear-gradient(to bottom, #ffea7d 15%, #f48523 61%, #df7e1b 99%)";
+        elmnt.classList.add("tablink-active");
       }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundImage = 'linear-gradient(to bottom, #ffea7d 15%, #f48523 61%, #df7e1b 99%)';
-      elmnt.classList.add('tablink-active');
-    }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
 
-
-    function openTokenomic(pageName, elmnt) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontenttoken");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+      function openTokenomic(pageName, elmnt) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontenttoken");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinktoken");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundImage = "";
+          tablinks[i].classList.remove("tablinktoken-active");
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundImage =
+          "linear-gradient(to bottom, #ffea7d 15%, #f48523 61%, #df7e1b 99%)";
+        elmnt.classList.add("tablinktoken-active");
       }
-      tablinks = document.getElementsByClassName("tablinktoken");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundImage = "";
-        tablinks[i].classList.remove('tablinktoken-active');
-      }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundImage = 'linear-gradient(to bottom, #ffea7d 15%, #f48523 61%, #df7e1b 99%)';
-      elmnt.classList.add('tablinktoken-active');
-    }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpenTokenomic").click();
-  </script>
-</body>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpenTokenomic").click();
 
+      // Set the date we're counting down to
+      var countDownDate = new Date("June 10, 2022 17:00:00").getTime();
+      // var countDownDate = new Date("May 27, 2022 17:00:00").getTime();
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor(
+          (distance) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("hours").innerHTML = "0";
+          document.getElementById("minutes").innerHTML = "0";
+          document.getElementById("seconds").innerHTML = "0";
+        }
+      }, 1000);
+    </script>
+  </body>
 </html>

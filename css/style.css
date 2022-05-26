@@ -19,6 +19,21 @@
   src: url(../fonts/AvenirMedium.ttf);
 }
 
+@font-face {
+  font-family: GotHamBoldItalic;
+  src: url(../fonts/GothamBoldItalic.otf);
+}
+
+@font-face {
+  font-family: GotHamBold;
+  src: url(../fonts/GothamBold.otf);
+}
+
+@font-face {
+  font-family: GotHamRegular;
+  src: url(../fonts/GothamRegular.otf);
+}
+
 /* style */
 html {
   scroll-behavior: smooth;
@@ -395,6 +410,7 @@ img{
 }
 .mct-news{
   margin-top: 64px;
+  min-width: 800px;
 }
 .mct-news .mctn-wrap{
   padding: 24px;
@@ -438,6 +454,41 @@ img{
 }
 .mctnw-item-wrap{
   margin: 60px 0 18px 0;
+}
+.get-new{
+  font-family: GothamBoldItalic;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 100px;
+}
+.clock{
+  color: #ffd692;
+  font-family: GothamBold;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  margin-top: 32px;
+}
+.wrap-clock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 8px 20px;
+  background: #222c32;
+  border: 5px double #ffd692;
+  border-radius: 8px;
+}
+.wrap-clock:not(:nth-last-child(1)){
+  margin-right: 12px;
+}
+.wrap-clock > span{
+  font-size: 16px;
+  font-family: GotHamRegular;
+  margin-top: 8px;
+}
+.clock .hours, .clock .minutes, .clock .seconds{
 }
 .miw-item{
   display: flex;
@@ -3277,6 +3328,32 @@ img{
   .tokenomic-line-8{
     top: 395px;
   }
+  .mct-news{
+    min-width: auto;
+  }
+  .mctnwt-text{
+    font-size: 22px;
+  }
+  .mctnw-item-wrap{
+    margin: 42px 0 18px 0;
+  }
+  .get-new{
+    padding: 0;
+  }
+  .clock{
+    padding: 0;
+  }
+  .wrap-clock{
+    padding: 4px 8px;
+    font-size: 16px;
+  }
+  .wrap-clock > span{
+    font-size: 12px;
+  }
+  .mct-news .mctn-wrap .mctnw-title{
+    left: 24px;
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4027,6 +4104,9 @@ img{
     padding: 10px;
     font-size: 10px;
     width: 70px;
+  }
+  .mctnw-item-wrap{
+    margin: 60px 0 18px 0;
   }
 }
 
